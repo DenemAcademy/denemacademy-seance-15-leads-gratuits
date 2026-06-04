@@ -1,0 +1,126 @@
+Séance 15 - Leads gratuits avec Serper
+Langue détectée: fr
+Note: les clés API visibles ou dictées ont été masquées.
+
+[00:00:01 - 00:00:06] Ok, c'est parti. On commence du coup la séance numéro 15 et on va s'attaquer à la génération
+[00:00:06 - 00:00:11] de l'Ids. Donc, on va utiliser l'outil Serper et ça va être totalement gratuit parce
+[00:00:11 - 00:00:16] qu'ils vont nous offrir 2500 crédits. Donc, nous, ce qu'on va faire, c'est qu'on
+[00:00:16 - 00:00:22] va utiliser Claude Code. Cette fois-ci, ça ne sera pas Codex. Donc, on va récupérer
+[00:00:22 - 00:00:29] la commande encore une fois, YOLO Mode. Et on va aller dans Mon Business. Et cette
+[00:00:29 - 00:00:34] Une fois ci, on va dans Prospect et numéro 6.
+[00:00:34 - 00:00:40] Maintenant, dans le dossier, on lance la commande et c'est parti.
+[00:00:40 - 00:01:07] Donc là, notre devoir faire avant de donner à code, de donner SEO, GEO, comprennent encore
+[00:01:07 - 00:01:14] plus le contexte et après, on va utiliser du coup server toutes les informations que
+[00:01:14 - 00:01:23] Cloudcode récupérer, on passera du coup et après, on a un fichier xlsx.
+[00:01:23 - 00:01:33] Donc on va essayer d'avoir un maximum de volumes, de récupérer des glides.
+[00:01:33 - 00:01:38] Encore une fois, là, vu qu'on est sur une version gratuite avec 2500 crédits, on va être
+[00:01:38 - 00:01:41] limité, mais on aura quand même une belle base de données.
+[00:01:41 - 00:01:47] Une fois qu'on aura, du coup, à chercher à les enrichir lors de prochaines séances.
+[00:01:47 - 00:01:55] On va avoir une base très bien structurée et exploitable pour de la peau enrichir parce
+[00:01:55 - 00:02:40] que là on récupère à peu près un message qu'on va faire.
+[00:02:40 - 00:02:45] Du coup, ça va être une architecture qui va se dérouler comme ça.
+[00:02:45 - 00:02:51] En plusieurs couches, la partie de marché, la partie ICP plus sèquement,
+[00:02:51 - 00:02:57] on va faire une matrice avec les roquettes, on va chercher la partie place,
+[00:02:57 - 00:03:00] donc place avec Google Maps, on va faire une partie search,
+[00:03:00 - 00:03:27] des adresses, web, notre Google, nombre d'avis, catégorie,
+[00:03:27 - 00:03:38] slash search, contact et la source, donc page contact,
+[00:03:38 - 00:03:40] on va sur les gals annuaire, papers,
+[00:03:40 - 00:03:43] calling company, snippet avec email,
+[00:03:43 - 00:03:46] après on va utiliser slash reviews,
+[00:03:46 - 00:03:50] pour détecter appel, réservation, attente,
+[00:03:50 - 00:04:07] Slash tout complète avec un gros, ça va être tous les aides pointes qu'on utilisait en un appel.
+[00:04:07 - 00:04:15] Un système de matrice, ce qu'on va faire, c'est qu'on va faire un axe segment, un axe zone,
+[00:04:15 - 00:04:33] un axe intention, un axe, le segment restaurateur, le mig, gastronomie, traiteur, pizzeria, hôtel,
+[00:04:33 - 00:04:44] restaurant, on va faire aussi le même segment, constamment et de pas avoir des leads,
+[00:04:44 - 00:04:50] qu'on ne compte pas à Maniche, on va les faire aussi sur la zone,
+[00:04:50 - 00:04:57] ville, département, région, quartier, zone touristique, ça va nous permettre de passer de 1 000 à 40 000 fiches brutes
+[00:04:57 - 00:05:06] on va aller chercher aussi de l'intention, donc l'intention c'est contact, mention légal, privatif, réservation, recrutement
+[00:05:06 - 00:05:10] donc ça va nous permettre d'augmenter la chance de trouver un contact ou un signal d'achat
+[00:05:10 - 00:05:16] on va faire aussi une source avec Google Business, site, annuaire, papers, n'est-ce que bien
+[00:05:16 - 00:05:29] il faut pas simplement faire une seule boucle, un seul parcours, un, deux, trois, quatre et après
+[00:05:29 - 00:05:46] Merci d'un autre GXLSX avec toute la mesurie, ensuite il va répéter, il va faire ça jusqu'à
+[00:05:46 - 00:05:52] temps qu'on n'ait plus, et après on va faire de la déduplication, comme tout à l'heure,
+[00:05:52 - 00:06:39] pour le scrapping similaire et du mode basse, donc painscore, téléphone, site, formulaire,
+[00:06:39 - 00:06:47] que d'une compagnie, discord, accoutis de réservation, site, chiffres au volume d'un
+[00:06:47 - 00:06:59] painscore, avec le routement et à la fin on aura du coup un GXLSX avec 12 onglets,
+[00:06:59 - 00:07:11] donc dashboard, all leads avec e-mail, on aura peut-être des partis sans e-mail, une part
+[00:07:11 - 00:07:18] à plus, priorité commerciale, geo, grid map, ville, département, densité, segment,
+[00:07:18 - 00:07:27] tégorie, revue au signal, les douleurs détectées, les carries ledger, les requêtes et coups,
+[00:07:27 - 00:07:35] les dupes maps, fusion et source, le scoring screws, même message, tature. Là,
+[00:07:35 - 00:07:41] l'objectif c'est d'avoir un promis du coup xls6 avec plusieurs onglets,
+[00:07:41 - 00:07:58] bien structuré, on verra en détail une fois par livrer mais l'information en rapport à cette
+[00:07:58 - 00:08:02] stratégie là, en fait tout ce qu'on va voir c'est en C15, du coup celle ci c'est en C16,
+[00:08:02 - 00:08:19] c'est en C17, c'est en C19, ça va être à créer là avec c'est enrichir au fur et à la stratégie
+[00:08:19 - 00:08:32] que je vous montre, je mets en place pour m'éclater un maximum et ensuite avoir un lit
+[00:08:32 - 00:08:38] qualifié pour ça c'est une automatisation complète plusieurs étapes que vous pouvez
+[00:08:38 - 00:08:45] revendre facilement. C'est comme ça que ça se vend le plus souvent. Avec une boîte,
+[00:08:45 - 00:08:54] la parmi l'EADS, si vous les enrichissez, une ligne égale, une team 901. Ça peut être
+[00:08:54 - 00:09:13] une solution, proposer un service d'automatisation, une régie par exemple de panneau solaire qui est
+[00:09:13 - 00:09:42] du l'EADS. Ça est un tour de business et en plus de le voir ensemble. Encore une fois,
+[00:09:42 - 00:09:52] ça part d'un prompt. Il fait un maximum le travail. Je demande bien tout comprendre.
+[00:09:52 - 00:10:00] Justement un prompt à copier le prompt.
+[00:10:01 - 00:10:13] Vous allez tout simplement coller juste ici et après on va le Serpereur pour aller
+[00:10:13 - 00:10:15] donner une autre clé API.
+[00:10:15 - 00:10:20] Donc moi j'ai un compte Serpereur, donc là je l'ai créé tout à l'heure, pas de
+[00:10:20 - 00:10:28] compte Serpereur, vous allez sur le Père API, sign up et vous renseignez les informations
+[00:10:28 - 00:10:32] tout simplement, vous prenez nom, adresse email et passeword, après ils vont demander
+[00:10:32 - 00:10:35] une confirmation par mail, vous cliquez dessus et vous allez arriver du coup sur le
+[00:10:35 - 00:10:36] dashboard.
+[00:10:36 - 00:10:40] Donc moi je suis sur le dashboard, j'ai les 2500 crédits offerts, si je clique
+[00:10:40 - 00:10:47] ici, on peut voir que j'ai ma clé API, donc c'est ce qu'il nous faut, donc je vais donner directement.
+[00:10:47 - 00:11:01] Ensuite, on a besoin de quoi ? On a besoin de mon business, tu de marché et j'ai besoin aussi de la
+[00:11:01 - 00:11:06] partie auditation. Donc là, j'ai toutes les informations. Je vais donner mon prompt, je vais
+[00:11:06 - 00:11:28] donner ma clé API, je vais donner mon écune de marché et mon auditation. Là, comme vous pouvez
+[00:11:28 - 00:11:33] voir, on a pu sur paramètres. On peut aller sur search, sur image, sur vidéo, sur place,
+[00:11:33 - 00:11:47] Sur place, par exemple, je mets bistro, cul, c'est le mot-clé, donc la carries, moi je cherchais
+[00:11:47 - 00:11:58] en France, localisation, Paris, langage, French. On ne commande pas, je souhaite voir une. Donc là,
+[00:11:58 - 00:12:05] comme on peut voir, j'ai un jason avec des informations, des adresses, etc. Nous,
+[00:12:05 - 00:12:24] c'est ce qu'on va faire, tourner sur 1 000, 20 000 pages en même temps. Le résultat,
+[00:12:24 - 00:12:32] utiliser place, on va utiliser aussi maps. Une fois qu'on a récupéré les informations,
+[00:12:32 - 00:12:41] avec l'attitude, la longitude, on va tout simplement croiser les données, comme je vous l'ai dit,
+[00:12:41 - 00:12:45] pour récupérer encore plus d'informations. On va aller chercher aussi la partie reviews,
+[00:12:45 - 00:12:51] donc reviews c'est quoi, c'est les avis Google, etc. Donc ça peut être intéressant justement si on
+[00:12:51 - 00:18:39] voit qu'il y a des avis négatifs, on ne met jamais la clé dans les fichiers logs et que ça
+[00:18:39 - 00:18:46] est markdown, on ne la fiche jamais. Une fois, elle est consommée, la clé sera revocée. Donc
+[00:18:46 - 00:18:50] Il faut bien lui dire parce que parfois il prend la tête, il va te dire que je ne veux pas me
+[00:18:50 - 00:18:51] le dans le fichier VLV.
+[00:18:51 - 00:18:58] Donc là c'est du one shot, prendre la tête, du volume, tu ne dois pas faire un échantillon,
+[00:18:58 - 00:19:00] tu dois pousser la collecte au maximum.
+[00:19:00 - 00:19:04] Viser 40 000 lits pour une, il le permette.
+[00:19:04 - 00:19:09] Donc viser le maximum de lits dédupliqués, viser le maximum de lits avec email public,
+[00:19:09 - 00:19:13] viser le maximum de lits à plus à exploitable commercialement.
+[00:19:13 - 00:19:28] Continuez à appeler le serpeur correctement, il reste des zones, des segments, des synonymes
+[00:19:28 - 00:19:30] ou sourds.
+[00:19:30 - 00:19:41] seulement si le serpeur indique les quotas atteints, paiement requit ou erreur écrite.
+[00:20:00 - 00:20:11] Ok, là ils sont en train de continuer, là il fait vraiment brasserie, il fait restaurant sur toutes les villes, après il va faire tous les mots-clés donc c'est top, laisse travailler.
+[00:20:11 - 00:20:20] Ne demande pas de validation entre les tours, tu avances en autonomie, crée, brife, c'est le MD, là c'est tout ce qu'il va nous faire.
+[00:20:20 - 00:20:58] Donc ça, quand vous allez donner vos fichiers, va adapter. Si ton marché n'est pas la restauration, adapte totalement, c'est pour ça qu'il y a une formation là.
+[00:20:58 - 00:21:01] zone construite, couverture France, top 100 des villes,
+[00:21:01 - 00:21:08] Française, départements, régions, zone touristique, secondaire à Fort Siupro,
+[00:21:08 - 00:21:14] variable, roquette place, segment ville, segment, c'est ce qu'on a vu là,
+[00:21:14 - 00:25:12] restauration vers le segment roquette, on va voir pk, play dead point, enrichir grâce à serveur.
+[00:25:12 - 00:28:32] Là vous faudra juste payer un petit peu pour enrichir, c'est au niveau
+[00:28:32 - 00:28:40] happy-fi, vous avez même une version gratuite à 5$ qui va faire l'affaire,
+[00:28:40 - 00:28:48] Je suis peut-être un peu moins quand même, mais avec des outils gratuit, une bonne stratégie
+[00:28:48 - 00:29:03] et avec code-code de connecté, on va avoir une bonne base et qu'il faut le faire vraiment.
+[00:30:03 - 00:30:59] Poser une question, travailler.
+[00:44:11 - 00:44:18] Et si on n'a pas toutes les informations, on utilise HappyFile du coup.
+[00:44:19 - 00:44:21] Cooper aussi les lignes que j'ai, et si on a...
+[01:30:21 - 01:30:26] Donc là on va arriver à la fin du coup, comme vous pouvez voir on n'aura plus de crédit,
+[01:30:26 - 01:30:29] du coup ce qu'on va faire c'est recréer un nouveau compte Serper.
+[01:30:29 - 01:31:33] Déméler les phases, mentionner, faire un message, des indications supplémentaires.
+[01:31:33 - 01:31:38] Je vais lui donner une nouvelle clé API Serper, donc pour ça ça va pas être compliqué.
+[01:31:38 - 01:32:40] Logout, Serper, anti-mail, récupérer encore une fois la clé API.
+[01:32:40 - 01:32:56] Là normalement on a 2500 crédits, dashboard, 1500, il y a la bonne clé.
+[01:32:56 - 01:33:28] On demande tout simplement de refaire l'étape en question, notre plan, encore une fois,
+[01:33:28 - 01:34:02] Search, Contact, Hero View Suite Arrangement, merci de là, pour réfléchir et corriger justement le système.
+[01:34:02 - 01:34:05] Par rapport à ma demande, je vais leur donner une clé à pays normalement.
+[01:34:05 - 01:34:31] On va repartir du coup sur cette nouvelle clé, on va voir sa réflexion, faire la phase 4, phase 5, top.
+[01:34:31 - 01:35:20] On se met bien plus rapidement, cette fois-ci, la recherche, l'end point il va être différent.
+[01:35:20 - 01:35:24] Voilà ce qu'on fait, c'est ça.
+[01:35:24 - 01:36:13] Rélègue l'adresse e-mail.
+[01:36:13 - 01:36:14] Ce qui se passe...
+[01:47:43 - 01:47:45] Ascat du coup
+[01:51:26 - 01:51:47] Ok, donc top, on a bien en détail, mais on a 377 lits bruts, on a énormément de lits sans e-mail
+[01:51:47 - 01:54:37] donc ça c'est problématique, mais cher par la suite, justement, on a parti website, Capify, c'est plutôt pas mal
+[01:54:37 - 01:54:44] on a quand même les adresses e-mail, on a la fourchée prie

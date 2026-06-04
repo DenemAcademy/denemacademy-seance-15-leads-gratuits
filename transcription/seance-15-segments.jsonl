@@ -1,0 +1,122 @@
+{"id": 1, "start": 0.53, "end": 6.15, "start_label": "00:00:01", "end_label": "00:00:06", "text": "Ok, c'est parti. On commence du coup la séance numéro 15 et on va s'attaquer à la génération"}
+{"id": 2, "start": 6.15, "end": 10.87, "start_label": "00:00:06", "end_label": "00:00:11", "text": "de l'Ids. Donc, on va utiliser l'outil Serper et ça va être totalement gratuit parce"}
+{"id": 3, "start": 10.87, "end": 16.19, "start_label": "00:00:11", "end_label": "00:00:16", "text": "qu'ils vont nous offrir 2500 crédits. Donc, nous, ce qu'on va faire, c'est qu'on"}
+{"id": 4, "start": 16.19, "end": 21.87, "start_label": "00:00:16", "end_label": "00:00:22", "text": "va utiliser Claude Code. Cette fois-ci, ça ne sera pas Codex. Donc, on va récupérer"}
+{"id": 5, "start": 21.87, "end": 28.93, "start_label": "00:00:22", "end_label": "00:00:29", "text": "la commande encore une fois, YOLO Mode. Et on va aller dans Mon Business. Et cette"}
+{"id": 6, "start": 28.93, "end": 33.69, "start_label": "00:00:29", "end_label": "00:00:34", "text": "Une fois ci, on va dans Prospect et numéro 6."}
+{"id": 7, "start": 33.69, "end": 39.55, "start_label": "00:00:34", "end_label": "00:00:40", "text": "Maintenant, dans le dossier, on lance la commande et c'est parti."}
+{"id": 8, "start": 39.55, "end": 67.04, "start_label": "00:00:40", "end_label": "00:01:07", "text": "Donc là, notre devoir faire avant de donner à code, de donner SEO, GEO, comprennent encore"}
+{"id": 9, "start": 67.04, "end": 73.86, "start_label": "00:01:07", "end_label": "00:01:14", "text": "plus le contexte et après, on va utiliser du coup server toutes les informations que"}
+{"id": 10, "start": 73.86, "end": 83.32, "start_label": "00:01:14", "end_label": "00:01:23", "text": "Cloudcode récupérer, on passera du coup et après, on a un fichier xlsx."}
+{"id": 11, "start": 83.32, "end": 93.0, "start_label": "00:01:23", "end_label": "00:01:33", "text": "Donc on va essayer d'avoir un maximum de volumes, de récupérer des glides."}
+{"id": 12, "start": 93.0, "end": 98.2, "start_label": "00:01:33", "end_label": "00:01:38", "text": "Encore une fois, là, vu qu'on est sur une version gratuite avec 2500 crédits, on va être"}
+{"id": 13, "start": 98.2, "end": 100.56, "start_label": "00:01:38", "end_label": "00:01:41", "text": "limité, mais on aura quand même une belle base de données."}
+{"id": 14, "start": 100.56, "end": 107.09, "start_label": "00:01:41", "end_label": "00:01:47", "text": "Une fois qu'on aura, du coup, à chercher à les enrichir lors de prochaines séances."}
+{"id": 15, "start": 107.09, "end": 114.85, "start_label": "00:01:47", "end_label": "00:01:55", "text": "On va avoir une base très bien structurée et exploitable pour de la peau enrichir parce"}
+{"id": 16, "start": 114.85, "end": 160.29, "start_label": "00:01:55", "end_label": "00:02:40", "text": "que là on récupère à peu près un message qu'on va faire."}
+{"id": 17, "start": 160.29, "end": 164.8, "start_label": "00:02:40", "end_label": "00:02:45", "text": "Du coup, ça va être une architecture qui va se dérouler comme ça."}
+{"id": 18, "start": 164.8, "end": 171.0, "start_label": "00:02:45", "end_label": "00:02:51", "text": "En plusieurs couches, la partie de marché, la partie ICP plus sèquement,"}
+{"id": 19, "start": 171.0, "end": 176.51, "start_label": "00:02:51", "end_label": "00:02:57", "text": "on va faire une matrice avec les roquettes, on va chercher la partie place,"}
+{"id": 20, "start": 176.51, "end": 179.51, "start_label": "00:02:57", "end_label": "00:03:00", "text": "donc place avec Google Maps, on va faire une partie search,"}
+{"id": 21, "start": 179.51, "end": 207.43, "start_label": "00:03:00", "end_label": "00:03:27", "text": "des adresses, web, notre Google, nombre d'avis, catégorie,"}
+{"id": 22, "start": 207.43, "end": 218.38, "start_label": "00:03:27", "end_label": "00:03:38", "text": "slash search, contact et la source, donc page contact,"}
+{"id": 23, "start": 218.38, "end": 220.38, "start_label": "00:03:38", "end_label": "00:03:40", "text": "on va sur les gals annuaire, papers,"}
+{"id": 24, "start": 220.38, "end": 223.18, "start_label": "00:03:40", "end_label": "00:03:43", "text": "calling company, snippet avec email,"}
+{"id": 25, "start": 223.18, "end": 225.96, "start_label": "00:03:43", "end_label": "00:03:46", "text": "après on va utiliser slash reviews,"}
+{"id": 26, "start": 225.96, "end": 229.63, "start_label": "00:03:46", "end_label": "00:03:50", "text": "pour détecter appel, réservation, attente,"}
+{"id": 27, "start": 229.63, "end": 246.9, "start_label": "00:03:50", "end_label": "00:04:07", "text": "Slash tout complète avec un gros, ça va être tous les aides pointes qu'on utilisait en un appel."}
+{"id": 28, "start": 246.9, "end": 255.39, "start_label": "00:04:07", "end_label": "00:04:15", "text": "Un système de matrice, ce qu'on va faire, c'est qu'on va faire un axe segment, un axe zone,"}
+{"id": 29, "start": 255.39, "end": 272.75, "start_label": "00:04:15", "end_label": "00:04:33", "text": "un axe intention, un axe, le segment restaurateur, le mig, gastronomie, traiteur, pizzeria, hôtel,"}
+{"id": 30, "start": 272.75, "end": 283.62, "start_label": "00:04:33", "end_label": "00:04:44", "text": "restaurant, on va faire aussi le même segment, constamment et de pas avoir des leads,"}
+{"id": 31, "start": 283.62, "end": 289.69, "start_label": "00:04:44", "end_label": "00:04:50", "text": "qu'on ne compte pas à Maniche, on va les faire aussi sur la zone,"}
+{"id": 32, "start": 289.69, "end": 296.73, "start_label": "00:04:50", "end_label": "00:04:57", "text": "ville, département, région, quartier, zone touristique, ça va nous permettre de passer de 1 000 à 40 000 fiches brutes"}
+{"id": 33, "start": 296.73, "end": 305.5, "start_label": "00:04:57", "end_label": "00:05:06", "text": "on va aller chercher aussi de l'intention, donc l'intention c'est contact, mention légal, privatif, réservation, recrutement"}
+{"id": 34, "start": 305.5, "end": 310.0, "start_label": "00:05:06", "end_label": "00:05:10", "text": "donc ça va nous permettre d'augmenter la chance de trouver un contact ou un signal d'achat"}
+{"id": 35, "start": 310.0, "end": 315.8, "start_label": "00:05:10", "end_label": "00:05:16", "text": "on va faire aussi une source avec Google Business, site, annuaire, papers, n'est-ce que bien"}
+{"id": 36, "start": 315.8, "end": 329.05, "start_label": "00:05:16", "end_label": "00:05:29", "text": "il faut pas simplement faire une seule boucle, un seul parcours, un, deux, trois, quatre et après"}
+{"id": 37, "start": 329.05, "end": 346.22, "start_label": "00:05:29", "end_label": "00:05:46", "text": "Merci d'un autre GXLSX avec toute la mesurie, ensuite il va répéter, il va faire ça jusqu'à"}
+{"id": 38, "start": 346.22, "end": 352.41, "start_label": "00:05:46", "end_label": "00:05:52", "text": "temps qu'on n'ait plus, et après on va faire de la déduplication, comme tout à l'heure,"}
+{"id": 39, "start": 352.41, "end": 399.3, "start_label": "00:05:52", "end_label": "00:06:39", "text": "pour le scrapping similaire et du mode basse, donc painscore, téléphone, site, formulaire,"}
+{"id": 40, "start": 399.3, "end": 407.2, "start_label": "00:06:39", "end_label": "00:06:47", "text": "que d'une compagnie, discord, accoutis de réservation, site, chiffres au volume d'un"}
+{"id": 41, "start": 407.2, "end": 418.66, "start_label": "00:06:47", "end_label": "00:06:59", "text": "painscore, avec le routement et à la fin on aura du coup un GXLSX avec 12 onglets,"}
+{"id": 42, "start": 418.66, "end": 430.52, "start_label": "00:06:59", "end_label": "00:07:11", "text": "donc dashboard, all leads avec e-mail, on aura peut-être des partis sans e-mail, une part"}
+{"id": 43, "start": 430.52, "end": 437.92, "start_label": "00:07:11", "end_label": "00:07:18", "text": "à plus, priorité commerciale, geo, grid map, ville, département, densité, segment,"}
+{"id": 44, "start": 437.92, "end": 446.52, "start_label": "00:07:18", "end_label": "00:07:27", "text": "tégorie, revue au signal, les douleurs détectées, les carries ledger, les requêtes et coups,"}
+{"id": 45, "start": 446.52, "end": 455.22, "start_label": "00:07:27", "end_label": "00:07:35", "text": "les dupes maps, fusion et source, le scoring screws, même message, tature. Là,"}
+{"id": 46, "start": 455.22, "end": 461.14, "start_label": "00:07:35", "end_label": "00:07:41", "text": "l'objectif c'est d'avoir un promis du coup xls6 avec plusieurs onglets,"}
+{"id": 47, "start": 461.14, "end": 477.51, "start_label": "00:07:41", "end_label": "00:07:58", "text": "bien structuré, on verra en détail une fois par livrer mais l'information en rapport à cette"}
+{"id": 48, "start": 477.51, "end": 481.79, "start_label": "00:07:58", "end_label": "00:08:02", "text": "stratégie là, en fait tout ce qu'on va voir c'est en C15, du coup celle ci c'est en C16,"}
+{"id": 49, "start": 481.79, "end": 499.38, "start_label": "00:08:02", "end_label": "00:08:19", "text": "c'est en C17, c'est en C19, ça va être à créer là avec c'est enrichir au fur et à la stratégie"}
+{"id": 50, "start": 499.38, "end": 512.34, "start_label": "00:08:19", "end_label": "00:08:32", "text": "que je vous montre, je mets en place pour m'éclater un maximum et ensuite avoir un lit"}
+{"id": 51, "start": 512.34, "end": 518.42, "start_label": "00:08:32", "end_label": "00:08:38", "text": "qualifié pour ça c'est une automatisation complète plusieurs étapes que vous pouvez"}
+{"id": 52, "start": 518.42, "end": 524.63, "start_label": "00:08:38", "end_label": "00:08:45", "text": "revendre facilement. C'est comme ça que ça se vend le plus souvent. Avec une boîte,"}
+{"id": 53, "start": 524.63, "end": 534.48, "start_label": "00:08:45", "end_label": "00:08:54", "text": "la parmi l'EADS, si vous les enrichissez, une ligne égale, une team 901. Ça peut être"}
+{"id": 54, "start": 534.48, "end": 552.59, "start_label": "00:08:54", "end_label": "00:09:13", "text": "une solution, proposer un service d'automatisation, une régie par exemple de panneau solaire qui est"}
+{"id": 55, "start": 552.59, "end": 582.0, "start_label": "00:09:13", "end_label": "00:09:42", "text": "du l'EADS. Ça est un tour de business et en plus de le voir ensemble. Encore une fois,"}
+{"id": 56, "start": 582.0, "end": 592.3, "start_label": "00:09:42", "end_label": "00:09:52", "text": "ça part d'un prompt. Il fait un maximum le travail. Je demande bien tout comprendre."}
+{"id": 57, "start": 592.3, "end": 599.9, "start_label": "00:09:52", "end_label": "00:10:00", "text": "Justement un prompt à copier le prompt."}
+{"id": 58, "start": 601.42, "end": 612.68, "start_label": "00:10:01", "end_label": "00:10:13", "text": "Vous allez tout simplement coller juste ici et après on va le Serpereur pour aller"}
+{"id": 59, "start": 612.68, "end": 614.73, "start_label": "00:10:13", "end_label": "00:10:15", "text": "donner une autre clé API."}
+{"id": 60, "start": 614.73, "end": 620.36, "start_label": "00:10:15", "end_label": "00:10:20", "text": "Donc moi j'ai un compte Serpereur, donc là je l'ai créé tout à l'heure, pas de"}
+{"id": 61, "start": 620.36, "end": 628.13, "start_label": "00:10:20", "end_label": "00:10:28", "text": "compte Serpereur, vous allez sur le Père API, sign up et vous renseignez les informations"}
+{"id": 62, "start": 628.13, "end": 631.83, "start_label": "00:10:28", "end_label": "00:10:32", "text": "tout simplement, vous prenez nom, adresse email et passeword, après ils vont demander"}
+{"id": 63, "start": 631.83, "end": 634.77, "start_label": "00:10:32", "end_label": "00:10:35", "text": "une confirmation par mail, vous cliquez dessus et vous allez arriver du coup sur le"}
+{"id": 64, "start": 634.77, "end": 635.83, "start_label": "00:10:35", "end_label": "00:10:36", "text": "dashboard."}
+{"id": 65, "start": 635.83, "end": 640.04, "start_label": "00:10:36", "end_label": "00:10:40", "text": "Donc moi je suis sur le dashboard, j'ai les 2500 crédits offerts, si je clique"}
+{"id": 66, "start": 640.04, "end": 646.76, "start_label": "00:10:40", "end_label": "00:10:47", "text": "ici, on peut voir que j'ai ma clé API, donc c'est ce qu'il nous faut, donc je vais donner directement."}
+{"id": 67, "start": 646.76, "end": 661.32, "start_label": "00:10:47", "end_label": "00:11:01", "text": "Ensuite, on a besoin de quoi ? On a besoin de mon business, tu de marché et j'ai besoin aussi de la"}
+{"id": 68, "start": 661.32, "end": 666.08, "start_label": "00:11:01", "end_label": "00:11:06", "text": "partie auditation. Donc là, j'ai toutes les informations. Je vais donner mon prompt, je vais"}
+{"id": 69, "start": 666.08, "end": 688.26, "start_label": "00:11:06", "end_label": "00:11:28", "text": "donner ma clé API, je vais donner mon écune de marché et mon auditation. Là, comme vous pouvez"}
+{"id": 70, "start": 688.26, "end": 692.8199999999999, "start_label": "00:11:28", "end_label": "00:11:33", "text": "voir, on a pu sur paramètres. On peut aller sur search, sur image, sur vidéo, sur place,"}
+{"id": 71, "start": 692.8199999999999, "end": 707.03, "start_label": "00:11:33", "end_label": "00:11:47", "text": "Sur place, par exemple, je mets bistro, cul, c'est le mot-clé, donc la carries, moi je cherchais"}
+{"id": 72, "start": 707.03, "end": 718.47, "start_label": "00:11:47", "end_label": "00:11:58", "text": "en France, localisation, Paris, langage, French. On ne commande pas, je souhaite voir une. Donc là,"}
+{"id": 73, "start": 718.47, "end": 725.28, "start_label": "00:11:58", "end_label": "00:12:05", "text": "comme on peut voir, j'ai un jason avec des informations, des adresses, etc. Nous,"}
+{"id": 74, "start": 725.28, "end": 744.48, "start_label": "00:12:05", "end_label": "00:12:24", "text": "c'est ce qu'on va faire, tourner sur 1 000, 20 000 pages en même temps. Le résultat,"}
+{"id": 75, "start": 744.48, "end": 752.21, "start_label": "00:12:24", "end_label": "00:12:32", "text": "utiliser place, on va utiliser aussi maps. Une fois qu'on a récupéré les informations,"}
+{"id": 76, "start": 752.21, "end": 760.79, "start_label": "00:12:32", "end_label": "00:12:41", "text": "avec l'attitude, la longitude, on va tout simplement croiser les données, comme je vous l'ai dit,"}
+{"id": 77, "start": 760.79, "end": 765.01, "start_label": "00:12:41", "end_label": "00:12:45", "text": "pour récupérer encore plus d'informations. On va aller chercher aussi la partie reviews,"}
+{"id": 78, "start": 765.01, "end": 770.8, "start_label": "00:12:45", "end_label": "00:12:51", "text": "donc reviews c'est quoi, c'est les avis Google, etc. Donc ça peut être intéressant justement si on"}
+{"id": 79, "start": 770.8, "end": 1119.04, "start_label": "00:12:51", "end_label": "00:18:39", "text": "voit qu'il y a des avis négatifs, on ne met jamais la clé dans les fichiers logs et que ça"}
+{"id": 80, "start": 1119.04, "end": 1125.65, "start_label": "00:18:39", "end_label": "00:18:46", "text": "est markdown, on ne la fiche jamais. Une fois, elle est consommée, la clé sera revocée. Donc"}
+{"id": 81, "start": 1125.65, "end": 1130.24, "start_label": "00:18:46", "end_label": "00:18:50", "text": "Il faut bien lui dire parce que parfois il prend la tête, il va te dire que je ne veux pas me"}
+{"id": 82, "start": 1130.24, "end": 1131.24, "start_label": "00:18:50", "end_label": "00:18:51", "text": "le dans le fichier VLV."}
+{"id": 83, "start": 1131.24, "end": 1137.88, "start_label": "00:18:51", "end_label": "00:18:58", "text": "Donc là c'est du one shot, prendre la tête, du volume, tu ne dois pas faire un échantillon,"}
+{"id": 84, "start": 1137.88, "end": 1139.88, "start_label": "00:18:58", "end_label": "00:19:00", "text": "tu dois pousser la collecte au maximum."}
+{"id": 85, "start": 1139.88, "end": 1143.5700000000002, "start_label": "00:19:00", "end_label": "00:19:04", "text": "Viser 40 000 lits pour une, il le permette."}
+{"id": 86, "start": 1143.5700000000002, "end": 1148.76, "start_label": "00:19:04", "end_label": "00:19:09", "text": "Donc viser le maximum de lits dédupliqués, viser le maximum de lits avec email public,"}
+{"id": 87, "start": 1148.76, "end": 1152.6799999999998, "start_label": "00:19:09", "end_label": "00:19:13", "text": "viser le maximum de lits à plus à exploitable commercialement."}
+{"id": 88, "start": 1152.6799999999998, "end": 1167.74, "start_label": "00:19:13", "end_label": "00:19:28", "text": "Continuez à appeler le serpeur correctement, il reste des zones, des segments, des synonymes"}
+{"id": 89, "start": 1167.74, "end": 1170.02, "start_label": "00:19:28", "end_label": "00:19:30", "text": "ou sourds."}
+{"id": 90, "start": 1170.02, "end": 1181.33, "start_label": "00:19:30", "end_label": "00:19:41", "text": "seulement si le serpeur indique les quotas atteints, paiement requit ou erreur écrite."}
+{"id": 91, "start": 1200.18, "end": 1210.62, "start_label": "00:20:00", "end_label": "00:20:11", "text": "Ok, là ils sont en train de continuer, là il fait vraiment brasserie, il fait restaurant sur toutes les villes, après il va faire tous les mots-clés donc c'est top, laisse travailler."}
+{"id": 92, "start": 1210.62, "end": 1220.5, "start_label": "00:20:11", "end_label": "00:20:20", "text": "Ne demande pas de validation entre les tours, tu avances en autonomie, crée, brife, c'est le MD, là c'est tout ce qu'il va nous faire."}
+{"id": 93, "start": 1220.5, "end": 1257.71, "start_label": "00:20:20", "end_label": "00:20:58", "text": "Donc ça, quand vous allez donner vos fichiers, va adapter. Si ton marché n'est pas la restauration, adapte totalement, c'est pour ça qu'il y a une formation là."}
+{"id": 94, "start": 1257.71, "end": 1260.83, "start_label": "00:20:58", "end_label": "00:21:01", "text": "zone construite, couverture France, top 100 des villes,"}
+{"id": 95, "start": 1260.83, "end": 1267.73, "start_label": "00:21:01", "end_label": "00:21:08", "text": "Française, départements, régions, zone touristique, secondaire à Fort Siupro,"}
+{"id": 96, "start": 1267.73, "end": 1273.67, "start_label": "00:21:08", "end_label": "00:21:14", "text": "variable, roquette place, segment ville, segment, c'est ce qu'on a vu là,"}
+{"id": 97, "start": 1273.67, "end": 1512.08, "start_label": "00:21:14", "end_label": "00:25:12", "text": "restauration vers le segment roquette, on va voir pk, play dead point, enrichir grâce à serveur."}
+{"id": 98, "start": 1512.08, "end": 1712.25, "start_label": "00:25:12", "end_label": "00:28:32", "text": "Là vous faudra juste payer un petit peu pour enrichir, c'est au niveau"}
+{"id": 99, "start": 1712.25, "end": 1719.63, "start_label": "00:28:32", "end_label": "00:28:40", "text": "happy-fi, vous avez même une version gratuite à 5$ qui va faire l'affaire,"}
+{"id": 100, "start": 1719.63, "end": 1727.5700000000002, "start_label": "00:28:40", "end_label": "00:28:48", "text": "Je suis peut-être un peu moins quand même, mais avec des outils gratuit, une bonne stratégie"}
+{"id": 101, "start": 1727.5700000000002, "end": 1743.4099999999999, "start_label": "00:28:48", "end_label": "00:29:03", "text": "et avec code-code de connecté, on va avoir une bonne base et qu'il faut le faire vraiment."}
+{"id": 102, "start": 1803.09, "end": 1859.49, "start_label": "00:30:03", "end_label": "00:30:59", "text": "Poser une question, travailler."}
+{"id": 103, "start": 2651.22, "end": 2657.87, "start_label": "00:44:11", "end_label": "00:44:18", "text": "Et si on n'a pas toutes les informations, on utilise HappyFile du coup."}
+{"id": 104, "start": 2658.64, "end": 2660.64, "start_label": "00:44:19", "end_label": "00:44:21", "text": "Cooper aussi les lignes que j'ai, et si on a..."}
+{"id": 105, "start": 5421.01, "end": 5425.76, "start_label": "01:30:21", "end_label": "01:30:26", "text": "Donc là on va arriver à la fin du coup, comme vous pouvez voir on n'aura plus de crédit,"}
+{"id": 106, "start": 5425.76, "end": 5429.01, "start_label": "01:30:26", "end_label": "01:30:29", "text": "du coup ce qu'on va faire c'est recréer un nouveau compte Serper."}
+{"id": 107, "start": 5429.01, "end": 5493.34, "start_label": "01:30:29", "end_label": "01:31:33", "text": "Déméler les phases, mentionner, faire un message, des indications supplémentaires."}
+{"id": 108, "start": 5493.34, "end": 5498.24, "start_label": "01:31:33", "end_label": "01:31:38", "text": "Je vais lui donner une nouvelle clé API Serper, donc pour ça ça va pas être compliqué."}
+{"id": 109, "start": 5498.24, "end": 5560.32, "start_label": "01:31:38", "end_label": "01:32:40", "text": "Logout, Serper, anti-mail, récupérer encore une fois la clé API."}
+{"id": 110, "start": 5560.32, "end": 5575.78, "start_label": "01:32:40", "end_label": "01:32:56", "text": "Là normalement on a 2500 crédits, dashboard, 1500, il y a la bonne clé."}
+{"id": 111, "start": 5575.78, "end": 5608.42, "start_label": "01:32:56", "end_label": "01:33:28", "text": "On demande tout simplement de refaire l'étape en question, notre plan, encore une fois,"}
+{"id": 112, "start": 5608.42, "end": 5642.25, "start_label": "01:33:28", "end_label": "01:34:02", "text": "Search, Contact, Hero View Suite Arrangement, merci de là, pour réfléchir et corriger justement le système."}
+{"id": 113, "start": 5642.25, "end": 5645.25, "start_label": "01:34:02", "end_label": "01:34:05", "text": "Par rapport à ma demande, je vais leur donner une clé à pays normalement."}
+{"id": 114, "start": 5645.25, "end": 5671.42, "start_label": "01:34:05", "end_label": "01:34:31", "text": "On va repartir du coup sur cette nouvelle clé, on va voir sa réflexion, faire la phase 4, phase 5, top."}
+{"id": 115, "start": 5671.42, "end": 5719.91, "start_label": "01:34:31", "end_label": "01:35:20", "text": "On se met bien plus rapidement, cette fois-ci, la recherche, l'end point il va être différent."}
+{"id": 116, "start": 5719.91, "end": 5724.22, "start_label": "01:35:20", "end_label": "01:35:24", "text": "Voilà ce qu'on fait, c'est ça."}
+{"id": 117, "start": 5724.22, "end": 5772.66, "start_label": "01:35:24", "end_label": "01:36:13", "text": "Rélègue l'adresse e-mail."}
+{"id": 118, "start": 5772.66, "end": 5773.66, "start_label": "01:36:13", "end_label": "01:36:14", "text": "Ce qui se passe..."}
+{"id": 119, "start": 6462.77, "end": 6464.77, "start_label": "01:47:43", "end_label": "01:47:45", "text": "Ascat du coup"}
+{"id": 120, "start": 6686.26, "end": 6707.46, "start_label": "01:51:26", "end_label": "01:51:47", "text": "Ok, donc top, on a bien en détail, mais on a 377 lits bruts, on a énormément de lits sans e-mail"}
+{"id": 121, "start": 6707.46, "end": 6876.72, "start_label": "01:51:47", "end_label": "01:54:37", "text": "donc ça c'est problématique, mais cher par la suite, justement, on a parti website, Capify, c'est plutôt pas mal"}
+{"id": 122, "start": 6876.72, "end": 6884.15, "start_label": "01:54:37", "end_label": "01:54:44", "text": "on a quand même les adresses e-mail, on a la fourchée prie"}
