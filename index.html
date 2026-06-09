@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Séance 15 - Leads gratuits avec Serper | DENEM Academy</title>
-  <meta name="description" content="Support technique complet pour créer une base de leads avec Serper, Claude Code, déduplication, scoring et export Excel.">
+  <title>DENEM Academy · Séance 15 · Obtenir des leads gratuits</title>
+  <meta name="description" content="Support DENEM Academy - Séance 15 : Obtenir des leads gratuits. Phase 4 - Machine à leads &amp; prospection.">
   <link rel="icon" href="logo-denem.jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 
 <style id="denem-act-system">
 :root {
-  --denem-act-color: #D97706;
+  --denem-act-color: #FB923C;
   --denem-act-bg: #ffffff;
 }
 body {
@@ -39,70 +39,101 @@ body {
 .denem-act-ribbon,
 .denem-sources-final {
   background: #ffffff;
-  color: #0f172a;
-  border-top: 4px solid var(--denem-act-color);
-  border-bottom: 4px solid var(--denem-act-color);
+  color: #000000;
+  border-top: 6px solid var(--denem-act-color);
+  border-bottom: 4px solid #000000;
 }
 .denem-act-ribbon {
-  padding: 18px;
+  padding: clamp(18px, 3vw, 34px) 18px;
 }
 .denem-act-ribbon__inner,
 .denem-sources-final__inner {
   max-width: 1320px;
   margin: 0 auto;
 }
-.denem-act-ribbon__kicker,
-.denem-sources-final__kicker {
-  display: inline-flex;
+.denem-act-ribbon__topline,
+.denem-act-ribbon__meta,
+.denem-act-ribbon__chips,
+.denem-act-ribbon__phase-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
-  border: 2px solid var(--denem-act-color);
-  background: var(--denem-act-color);
-  color: #ffffff;
+}
+.denem-act-ribbon__topline {
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.denem-act-ribbon__kicker,
+.denem-sources-final__kicker,
+.denem-act-ribbon__session,
+.denem-act-ribbon__meta span,
+.denem-act-ribbon__phase-nav strong,
+.denem-act-ribbon__phase-nav a {
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #000000;
   padding: 8px 12px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 12px;
   font-weight: 900;
+  line-height: 1;
   text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--denem-act-color);
+}
+.denem-act-ribbon__kicker,
+.denem-act-ribbon__phase-nav a.is-current,
+.denem-act-ribbon__phase-nav strong {
+  background: var(--denem-act-color);
+}
+.denem-act-ribbon__session {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 4px 4px 0 var(--denem-act-color);
 }
 .denem-act-ribbon h2,
 .denem-sources-final h2 {
-  margin: 14px 0 8px;
-  color: var(--denem-act-color);
-  font-size: 48px;
-  line-height: 1.03;
+  max-width: 1120px;
+  margin: 10px 0 10px;
+  color: #000000;
+  font-size: clamp(38px, 6vw, 86px);
+  line-height: .94;
   font-weight: 950;
   letter-spacing: 0;
+  border-left: 14px solid var(--denem-act-color);
+  padding-left: clamp(14px, 2vw, 24px);
 }
 .denem-act-ribbon p {
-  max-width: 920px;
+  max-width: 960px;
   margin: 0;
-  color: #334155;
-  font-size: 18px;
-  line-height: 1.7;
+  color: #000000;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.65;
 }
 .denem-act-ribbon__chips,
-.denem-sources-final ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 16px 0 0;
+.denem-act-ribbon__phase-nav {
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
 }
-.denem-act-ribbon__chips span,
-.denem-sources-final a {
+.denem-act-ribbon__chips span {
   display: inline-flex;
   align-items: center;
-  border: 2px solid var(--denem-act-color);
+  border: 2px solid #000000;
   background: #ffffff;
-  color: #0f172a;
+  color: #000000;
   padding: 10px 12px;
   text-decoration: none;
   font-weight: 900;
+  box-shadow: 3px 3px 0 var(--denem-act-color);
 }
-.denem-sources-final a:hover {
+.denem-act-ribbon__phase-nav {
+  padding-top: 14px;
+  border-top: 2px solid #000000;
+}
+.denem-act-ribbon__phase-nav a:hover {
   background: var(--denem-act-color);
-  color: #ffffff;
 }
 .denem-sources-final {
   padding: 56px 18px;
@@ -114,23 +145,20 @@ body {
 .nav-chip.is-active,
 .summary-card b {
   background-color: var(--denem-act-color) !important;
-  border-color: var(--denem-act-color) !important;
-  color: #ffffff !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
 }
-
 @media (max-width: 700px) {
-  .denem-act-ribbon h2,
-  .denem-sources-final h2 {
-    font-size: 32px;
+  .denem-act-ribbon__topline {
+    justify-content: flex-start;
   }
-  .denem-act-ribbon,
-  .denem-sources-final {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .denem-sources-final ul {
+  .denem-act-ribbon__phase-nav {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .denem-act-ribbon h2,
+  .denem-sources-final h2 {
+    font-size: 34px;
   }
 }
 </style>
@@ -140,8 +168,8 @@ body {
   color-scheme: light;
   --denem-white: #FFFFFF;
   --denem-black: #000000;
-  --denem-act: #EAB308;
-  --denem-act-number: "5";
+  --denem-act: #FB923C;
+  --denem-act-number: "4";
   --ink: #000000;
   --muted: #000000;
   --line: #000000;
@@ -1135,22 +1163,210 @@ blockquote span:not(.num):not(.badge),
 }
 </style>
 
+<style id="denem-session-media-system">
+.denem-session-switcher {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(280px, 720px);
+  gap: 10px;
+  align-items: center;
+  margin: 18px auto 0;
+  padding: 14px 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  max-width: 980px;
+}
+.denem-session-switcher label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  box-shadow: 4px 4px 0 var(--denem-act-color, var(--denem-act, #60A5FA));
+  padding: 10px 12px;
+  font: 950 12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.denem-session-switcher select {
+  width: 100%;
+  min-height: 44px;
+  border: 2px solid #000000;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 4px 4px 0 var(--denem-act-color, var(--denem-act, #60A5FA));
+  padding: 0 44px 0 14px;
+  font: 900 14px/1.1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  cursor: pointer;
+  appearance: auto;
+}
+.media-card,
+.shot,
+.visual,
+.hero-card,
+.poster,
+.image-card,
+.screen,
+.capture,
+figure[class*="media"],
+figure[class*="visual"],
+figure[class*="shot"] {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #ffffff !important;
+  background-image:
+    linear-gradient(45deg, rgba(0,0,0,.035) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(0,0,0,.035) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(0,0,0,.035) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(0,0,0,.035) 75%) !important;
+  background-size: 18px 18px !important;
+  background-position: 0 0, 0 9px, 9px -9px, -9px 0 !important;
+}
+.media-card > img,
+.shot > img,
+.visual > img,
+.hero-card > img,
+figure[class*="media"] > img,
+figure[class*="visual"] > img,
+figure[class*="shot"] > img {
+  position: relative !important;
+  z-index: 1 !important;
+  background: #ffffff !important;
+}
+.media-card::after,
+.shot::after,
+.visual::after,
+.hero-card::after,
+figure[class*="media"]::after,
+figure[class*="visual"]::after,
+figure[class*="shot"]::after {
+  content: "Capture";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  padding: 6px 8px;
+  font: 950 10px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  pointer-events: none;
+}
+.media-card:has(figcaption)::after,
+.shot:has(figcaption)::after,
+.visual:has(figcaption)::after,
+figure[class*="media"]:has(figcaption)::after,
+figure[class*="visual"]:has(figcaption)::after,
+figure[class*="shot"]:has(figcaption)::after {
+  content: none;
+}
+.media-card:empty,
+.shot:empty,
+.visual:empty,
+.hero-card:empty,
+figure[class*="media"]:empty,
+figure[class*="visual"]:empty,
+figure[class*="shot"]:empty {
+  min-height: 220px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.media-card:empty::before,
+.shot:empty::before,
+.visual:empty::before,
+.hero-card:empty::before,
+figure[class*="media"]:empty::before,
+figure[class*="visual"]:empty::before,
+figure[class*="shot"]:empty::before,
+.is-media-missing::before {
+  content: "Bloc media a completer";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  background: var(--denem-act-color, var(--denem-act, #60A5FA));
+  color: #000000;
+  padding: 12px 14px;
+  font: 950 12px/1.15 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.is-media-missing {
+  min-height: 220px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+.is-media-missing > img {
+  display: none !important;
+}
+@media (max-width: 700px) {
+  .denem-session-switcher {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+  .denem-session-switcher select {
+    font-size: 13px;
+  }
+}
+</style>
 </head>
-<body>
+<body data-phase="4" data-session="15" data-old-session="15">
 
 <section class="denem-act-ribbon" aria-label="En-tête du support de cours">
   <div class="denem-act-ribbon__inner">
     <div class="denem-act-ribbon__topline">
-      <span class="denem-act-ribbon__kicker">Acte 5 · Séances 15-19</span>
-      <span class="denem-act-ribbon__session">Séance 15</span>
+      <span class="denem-act-ribbon__kicker">Phase 4 · Machine à leads &amp; prospection</span>
+      <span class="denem-act-ribbon__session">Séance 15 · ex-15</span>
     </div>
-    <h2>Leads gratuits avec Serper</h2>
-    <p>Un repère simple pour savoir où tu es, quoi faire et comment retrouver les étapes importantes.</p>
+    <h2>Obtenir des leads gratuits</h2>
+    <p>On obtient, enrichit, nettoie, score et active une base de prospects sous contrôle.</p>
     <div class="denem-act-ribbon__chips" aria-label="Repères utiles du support">
-      <span>Parcours · Leads, data, scraping et prospection</span>
-      <span>À faire · Suivre la séance puis refaire seul</span>
-      <span>Navigation · Boutons 01, 02, 03... pour retrouver une étape</span>
+      <span>Business</span>
+      <span>Séances 15 à 19</span>
+      <span>Parcours DENEM Academy</span>
+      <span>Support technique séances 1 à 24</span>
     </div>
+    <div class="denem-session-switcher" aria-label="Changer de séance">
+      <label for="denem-session-switch">Changer de séance</label>
+      <select id="denem-session-switch">
+        <option value="../DENEMACADEMY-SEANCE-1-CLAUDE-CODE/index.html">01 — Claude Code : agents IA &amp; automatisations · Phase 0</option>
+        <option value="../seance-02-codex/index.html">02 — Codex : agents IA &amp; automatisations · Phase 0</option>
+        <option value="../seance-03-n8n/index.html">03 — Découverte et prise en main de n8n · Phase 0</option>
+        <option value="../seance-04-cowork/index.html">04 — Maîtriser Claude Cowork · Phase 0</option>
+        <option value="../formation-seance-06-qg-cowork/index.html">05 — Créer son QG de travail Cowork · Phase 0</option>
+        <option value="../seance-05-etude-marche/index.html">06 — Étude de marché complète · Phase 1</option>
+        <option value="../seance-07-identite-marque/index.html">07 — Créer son identité de marque · Phase 1</option>
+        <option value="../seance-09-site-web-wordpress/index.html">08 — Créer et déployer son site WordPress · Phase 2</option>
+        <option value="../formation-seance-08-audit-seo-geo/index.html">09 — Audit &amp; stratégie SEO/GEO automatisé · Phase 2</option>
+        <option value="../denemacademy-seance-10-blog-automatique/index.html">10 — Créer son blog pour attirer des leads · Phase 2</option>
+        <option value="../seance-11-automatiser-publication-article/index.html">11 — Automatiser la publication d'articles · Phase 2</option>
+        <option value="../formation-seance-12-profil-linkedin/index.html">12 — Profil LinkedIn optimisé · Phase 3</option>
+        <option value="../seance-13-creer-son-lead-magnet/index.html">13 — Créer son lead magnet · Phase 3</option>
+        <option value="../seance-14-automatiser-posts-linkedin/index.html">14 — Automatiser ses posts LinkedIn · Phase 3</option>
+        <option value="#top" selected>15 — Obtenir des leads gratuits · Phase 4</option>
+        <option value="../seance-16-enrichir-leads-data-gouv/index.html">16 — Enrichir ses leads avec data.gouv · Phase 4</option>
+        <option value="../formation-seance-17-enrichir-leads-apify/index.html">17 — Enrichir ses leads avec Apify · Phase 4</option>
+        <option value="../seance-18-nettoyer-scorer-bdd/index.html">18 — Nettoyer / scorer sa BDD · Phase 4</option>
+        <option value="../seance-19-prospection-automatisee/index.html">19 — Stratégie de prospection automatisée · Phase 4</option>
+        <option value="../seance-20-audit-technique-client/index.html">20 — Premier RDV commercial &amp; audit client · Phase 5</option>
+        <option value="../seance-21-organisation-projet-client/index.html">21 — Organiser son projet client · Phase 5</option>
+        <option value="../seance-22-rag-supabase/index.html">22 — Créer un RAG sur mesure · Phase 5</option>
+        <option value="../seance-23-chatbot-ia-vocal-texte/index.html">23 — Créer un chatbot IA vocal/texte pour ses clients · Phase 5</option>
+        <option value="../seance-24-evaluation-finale/index.html">24 — Évaluation finale · Phase 6</option>
+      </select>
+    </div>
+    <nav class="denem-act-ribbon__phase-nav" aria-label="Navigation dans la phase">
+      <strong>Dans cette phase</strong>
+      <a class="is-current" aria-current="page" href="#top">15 · Leads gratuits</a>
+      <a href="../seance-16-enrichir-leads-data-gouv/index.html">16 · data.gouv</a>
+      <a href="../formation-seance-17-enrichir-leads-apify/index.html">17 · Apify</a>
+      <a href="../seance-18-nettoyer-scorer-bdd/index.html">18 · Nettoyer BDD</a>
+      <a href="../seance-19-prospection-automatisee/index.html">19 · Prospection</a>
+    </nav>
   </div>
 </section>
 
@@ -1163,7 +1379,7 @@ blockquote span:not(.num):not(.badge),
   </header>
   <section class="hero-main">
     <div class="hero-inner">
-      <span class="eyebrow">Acte 2 · Acquisition · Serper</span>
+      <span class="eyebrow">Séance 15 · Leads gratuits</span>
       <h1>Leads gratuits avec Serper.</h1>
       <p>Je pars de l'étude de marché et de l'audit SEO/GEO. Ensuite je transforme cette logique en base de prospects : requêtes Serper, Google Places, Search, Reviews, déduplication, scoring et fichier Excel exploitable.</p>
       <div class="hero-actions"><a href="#section-01">Commencer</a><a href="#section-77">Prompt maître</a></div>
@@ -1174,7 +1390,7 @@ blockquote span:not(.num):not(.badge),
 <section id="section-01" class="section reveal" data-section="1"><div class="hero-grid"><div>
       <div class="meta-row">
         <span class="num">01</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>cadre</span>
       </div>
     <h2>Je ne cherche pas des leads au hasard</h2><p class="lead">Dans cette séance, je veux construire une base de prospects utilisable. Le but n&#x27;est pas d&#x27;ouvrir Google, taper un métier, prendre trois contacts, puis appeler ça une prospection. Je pars de mon étude de marché et de ma stratégie SEO/GEO. Ces fichiers me disent qui viser, pourquoi les viser et quels problèmes je peux résoudre. Serper sert ensuite à passer du raisonnement à une vraie base de données.</p><blockquote>L&#x27;étude de marché dit qui viser. Serper trouve les entreprises. Le scoring dit qui contacter en premier.</blockquote></div>
@@ -1195,14 +1411,14 @@ blockquote span:not(.num):not(.badge),
 <section id="section-02" class="section reveal" data-section="2"><div class="split"><div>
       <div class="meta-row">
         <span class="num">02</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>organisation</span>
       </div>
     <h2>Le dossier mon-business garde toute la logique</h2><p class="lead">Je garde un dossier unique pour le business. Il contient la marque, l&#x27;étude de marché, le site, les audits, les offres, les prospects et les clients. Quand je lance Claude Code ou Codex, je veux que l&#x27;agent comprenne le contexte complet. Si les fichiers sont dispersés, l&#x27;agent travaille avec une vision trop courte.</p></div><div><div class="card-grid"><div><b>00-brand</b><p>La base de l&#x27;identité.</p></div><div><b>01-etude-marche</b><p>La cible et les pains.</p></div><div><b>02-site</b><p>Le site et l&#x27;audit SEO/GEO.</p></div><div><b>06-prospects</b><p>La base de leads.</p></div></div></div></div></section>
 <section id="section-03" class="section reveal" data-section="3">
       <div class="meta-row">
         <span class="num">03</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>dossier</span>
       </div>
     <h2>06-prospects devient le poste de travail</h2><p class="lead">Je crée ou j&#x27;ouvre le dossier `06-prospects` parce que cette séance appartient à l&#x27;acquisition. Ce dossier reçoit les fichiers utiles : Excel, CSV, rapport, prompts, notes et éventuellement les exports. Je ne veux pas que les résultats restent cachés dans un dossier temporaire que je ne retrouve plus.</p>
@@ -1214,35 +1430,35 @@ blockquote span:not(.num):not(.badge),
 <section id="section-04" class="section reveal" data-section="4">
       <div class="meta-row">
         <span class="num">04</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>résultat</span>
       </div>
     <h2>Le résultat attendu est concret</h2><p class="lead">À la fin, je veux un fichier `leads-massif.xlsx`, un CSV, un rapport MD et une base structurée. Le fichier ne doit pas juste contenir des noms. Il doit contenir un score, un segment, une ville, un site, un email quand il existe, un téléphone, les sources, les signaux de douleur et un angle de message.</p><div class="card-grid"><div><b>XLSX</b><p>Pour filtrer, trier et décider.</p></div><div><b>CSV</b><p>Pour importer dans un CRM ou un outil no-code.</p></div><div><b>MD</b><p>Pour lire la synthèse sans ouvrir Excel.</p></div><div><b>Raw</b><p>Pour garder les preuves et les réponses API.</p></div></div></section>
 <section id="section-05" class="section reveal" data-section="5"><div class="split"><div>
       <div class="meta-row">
         <span class="num">05</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>business</span>
       </div>
     <h2>Je garde l&#x27;exemple restauration</h2><p class="lead">Dans l&#x27;exemple, le business aide les restaurants avec l&#x27;IA. Je cible donc des restaurants, brasseries, bistrots, petites chaînes, traiteurs et lieux de privatisation. Je ne cherche pas seulement des fiches Google. Je cherche des entreprises qui ont peut-être un problème d&#x27;appels, de réservation, d&#x27;avis, de temps perdu ou de suivi client.</p></div><div><div class="table-wrap"><table><thead><tr><th>Segment</th><th>Pourquoi il m&#x27;intéresse</th><th>Signal à chercher</th></tr></thead><tbody><tr><td>Brasserie</td><td>Volume fort et besoin opérationnel</td><td>Avis, téléphone, réservation</td></tr><tr><td>Bistronomie</td><td>Ticket moyen plus élevé</td><td>Réputation, expérience client</td></tr><tr><td>Traiteur</td><td>Devis et demandes entrantes</td><td>Formulaire, privatisation</td></tr><tr><td>Petite chaîne</td><td>Budget et répétition</td><td>Multi-sites, recrutement</td></tr></tbody></table></div></div></div></section>
 <section id="section-06" class="section reveal" data-section="6">
       <div class="meta-row">
         <span class="num">06</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>gratuit</span>
       </div>
     <h2>Gratuit ne veut pas dire sans coût</h2><p class="lead">On parle de leads gratuits parce qu&#x27;on ne paie pas un fichier tout prêt. Mais il y a quand même un coût : les crédits Serper, le temps de contrôle, la qualité des prompts et la vérification manuelle. Le vrai avantage, c&#x27;est que je garde la méthode. Je peux la relancer sur un autre marché plus tard.</p><div class="warning"><b>Attention terrain</b><p>Ne confonds pas gratuit et magique. Une base de leads utile demande une stratégie, une déduplication et un scoring.</p></div></section>
 <section id="section-07" class="section reveal" data-section="7">
       <div class="meta-row">
         <span class="num">07</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>sources</span>
       </div>
     <h2>Les fichiers d&#x27;avant servent de boussole</h2><p class="lead">Je demande à l&#x27;agent de lire `01-etude-marche/etude-marche.md` et `02-site/audits-seo/strategie.md`. Ces fichiers évitent une erreur classique : collecter tout ce qui ressemble à un restaurant. Je veux des leads alignés avec mon offre, pas une liste trop large que je ne saurai pas traiter.</p><div class="check-grid"><label><input type="checkbox"> Le secteur est clair</label><label><input type="checkbox"> La zone est claire</label><label><input type="checkbox"> Le décideur est clair</label><label><input type="checkbox"> Les exclusions sont claires</label></div></section>
 <section id="section-08" class="section reveal" data-section="8">
       <div class="meta-row">
         <span class="num">08</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>erreur</span>
       </div>
     <h2>L&#x27;erreur classique : commencer par l&#x27;API</h2><p class="lead">Si je lance Serper trop vite, l&#x27;agent dépense les crédits avant de comprendre le marché. Il peut récupérer des milliers de résultats, mais beaucoup seront inutiles. Je bloque donc l&#x27;appel API au début du prompt : pas de Serper avant un brief cible clair.</p>
@@ -1254,21 +1470,21 @@ blockquote span:not(.num):not(.badge),
 <section id="section-09" class="section reveal" data-section="9">
       <div class="meta-row">
         <span class="num">09</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>question</span>
       </div>
     <h2>La bonne question n&#x27;est pas “où trouver des leads ?”</h2><p class="lead">La bonne question est : quelles entreprises ont un problème visible, un budget probable, un décideur accessible et un intérêt logique pour mon offre ? Cette question change tout. Elle force à chercher des signaux, pas seulement des coordonnées.</p><blockquote>Un email n&#x27;est pas un bon lead. Un bon lead est une entreprise avec un problème, une source et une raison de te répondre.</blockquote></section>
 <section id="section-10" class="section reveal" data-section="10">
       <div class="meta-row">
         <span class="num">10</span>
-        <span>Acte 1</span>
+        <span>Partie 1</span>
         <span>preuves</span>
       </div>
     <h2>Je définis les preuves de réussite</h2><p class="lead">Je veux pouvoir vérifier le travail sans croire l&#x27;agent sur parole. Les preuves sont simples : fichiers créés, logs, nombre d&#x27;appels, nombre de leads, taux de doublons, emails plausibles, scores cohérents et sources conservées. Si une preuve manque, je corrige.</p><div class="diagnostic"><b>Diagnostic</b><p>Le dossier contient les exports.</p><p>Le ledger liste les requêtes.</p><p>Les meilleurs leads ont une source.</p><p>La clé API n&#x27;apparaît pas dans les fichiers.</p></div></section>
 <section id="section-11" class="section reveal" data-section="11">
       <div class="meta-row">
         <span class="num">11</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>serper</span>
       </div>
     <h2>Serper expliqué simplement</h2><p class="lead">Serper donne accès aux résultats Google via API. Au lieu de copier-coller les résultats à la main, je demande à l&#x27;agent de faire des requêtes structurées, de récupérer les données, de les ranger et de les analyser. Ce n&#x27;est pas un CRM. Ce n&#x27;est pas un scraper magique. C&#x27;est une porte d&#x27;entrée propre vers Search, Places et Reviews.</p>
@@ -1290,7 +1506,7 @@ blockquote span:not(.num):not(.badge),
 <section id="section-12" class="section reveal" data-section="12"><div class="split"><div>
       <div class="meta-row">
         <span class="num">12</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>search</span>
       </div>
     <h2>Search sert à trouver les pages et les contacts</h2><p class="lead">L&#x27;endpoint Search renvoie des résultats Google classiques. Je l&#x27;utilise pour trouver des pages contact, des mentions légales, des annuaires, des sites avec email visible dans le snippet, et des pages qui parlent de réservation, privatisation ou devis.</p></div><div>
@@ -1313,7 +1529,7 @@ blockquote span:not(.num):not(.badge),
 <section id="section-13" class="section reveal" data-section="13"><div class="split"><div>
       <div class="meta-row">
         <span class="num">13</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>places</span>
       </div>
     <h2>Places sert à créer le volume local</h2><p class="lead">L&#x27;endpoint Places remonte les fiches Google Business : nom, adresse, catégorie, note, nombre d&#x27;avis, site web et CID. C&#x27;est la base pour créer du volume sur des villes et des segments. Je ne m&#x27;attends pas à obtenir tous les emails ici. Je m&#x27;attends à construire une base large.</p></div><div>
@@ -1338,7 +1554,7 @@ blockquote span:not(.num):not(.badge),
 <section id="section-14" class="section reveal" data-section="14"><div class="split"><div>
       <div class="meta-row">
         <span class="num">14</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>reviews</span>
       </div>
     <h2>Reviews sert à trouver les douleurs</h2><p class="lead">L&#x27;endpoint Reviews prend le CID d&#x27;une fiche Google et récupère des avis. Je ne lis pas les avis pour juger le restaurant. Je les lis pour détecter des problèmes vendables : attente, téléphone, réservation, organisation, annulation, service, avis négatifs ou demandes de groupe.</p></div><div>
@@ -1356,21 +1572,21 @@ blockquote span:not(.num):not(.badge),
 <section id="section-15" class="section reveal" data-section="15">
       <div class="meta-row">
         <span class="num">15</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>autocomplete</span>
       </div>
     <h2>Autocomplete relance la recherche quand elle s&#x27;essouffle</h2><p class="lead">Quand une requête produit trop de doublons, je demande à l&#x27;agent de chercher des variantes. Autocomplete aide à trouver des synonymes, des formulations et des catégories que je n&#x27;avais pas prévues. C&#x27;est utile en fin de collecte, pas au début.</p><div class="card-grid"><div><b>Exemple</b><p>restaurant privatisation paris</p></div><div><b>Variante</b><p>restaurant groupe paris</p></div><div><b>Variante</b><p>brasserie événement paris</p></div><div><b>Objectif</b><p>Trouver un angle moins saturé</p></div></div></section>
 <section id="section-16" class="section reveal" data-section="16">
       <div class="meta-row">
         <span class="num">16</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>news</span>
       </div>
     <h2>News est optionnel</h2><p class="lead">Je peux utiliser News pour détecter des signaux frais : ouverture, recrutement, événement, levée, changement de direction. Mais ce n&#x27;est pas le cœur de la séance. Pour une base massive, Places et Search font déjà l&#x27;essentiel.</p><div class="warning"><b>Attention terrain</b><p>Ne multiplie pas les endpoints pour faire joli. Chaque endpoint doit apporter une donnée utile.</p></div></section>
 <section id="section-17" class="section reveal" data-section="17">
       <div class="meta-row">
         <span class="num">17</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>places-limite</span>
       </div>
     <h2>Places seul ne suffit pas</h2><p class="lead">Places donne beaucoup d&#x27;entreprises, mais pas toujours l&#x27;email, pas toujours le décideur, pas toujours l&#x27;angle de message. Si je m&#x27;arrête à Places, j&#x27;ai une base large mais parfois froide. Il faut ensuite enrichir avec Search et les sites publics.</p>
@@ -1382,21 +1598,21 @@ blockquote span:not(.num):not(.badge),
 <section id="section-18" class="section reveal" data-section="18"><div class="split"><div>
       <div class="meta-row">
         <span class="num">18</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>search-limite</span>
       </div>
     <h2>Search seul ne suffit pas non plus</h2><p class="lead">Search peut trouver des emails et des pages contact, mais il rate souvent des établissements très locaux visibles dans Maps. Il peut aussi sortir des pages trop anciennes ou des annuaires peu propres. Je croise donc Search avec Places.</p></div><div><div class="table-wrap"><table><thead><tr><th>Endpoint</th><th>Force</th><th>Limite</th></tr></thead><tbody><tr><td>Places</td><td>Volume local</td><td>Peu d&#x27;emails</td></tr><tr><td>Search</td><td>Contacts et sources</td><td>Moins fiable sur le local</td></tr><tr><td>Reviews</td><td>Douleurs</td><td>À réserver aux meilleurs leads</td></tr></tbody></table></div></div></div></section>
 <section id="section-19" class="section reveal" data-section="19">
       <div class="meta-row">
         <span class="num">19</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>cid</span>
       </div>
     <h2>Le CID est une clé de travail</h2><p class="lead">Le CID identifie une fiche Google Business. Quand je l&#x27;ai, je peux relier la fiche Places aux reviews. Ça évite de chercher les avis à la main et ça permet de garder la source du signal.</p><div class="tip"><b>Tip</b><p>Si un lead a un CID, garde-le. Il sert souvent plus tard pour enrichir la fiche sans repartir de zéro.</p></div></section>
 <section id="section-20" class="section reveal" data-section="20">
       <div class="meta-row">
         <span class="num">20</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>crédits</span>
       </div>
     <h2>Je surveille les crédits comme un budget</h2><p class="lead">Serper consomme des crédits. Je ne veux pas que l&#x27;agent dépense tout pour des requêtes inutiles. Le prompt impose un plafond prudent, un cache raw et un ledger. C&#x27;est ce qui transforme une exploration en opération contrôlée.</p>
@@ -1408,7 +1624,7 @@ blockquote span:not(.num):not(.badge),
 <section id="section-21" class="section reveal" data-section="21">
       <div class="meta-row">
         <span class="num">21</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>clé</span>
       </div>
     <h2>La clé API reste temporaire</h2><p class="lead">Dans la séance, la clé est collée dans le prompt pour éviter de gérer une variable d&#x27;environnement. C&#x27;est pratique pour apprendre, mais je ne publie jamais une vraie clé. Après le run, elle doit être révoquée ou remplacée.</p>
@@ -1436,14 +1652,14 @@ blockquote span:not(.num):not(.badge),
 <section id="section-22" class="section reveal" data-section="22">
       <div class="meta-row">
         <span class="num">22</span>
-        <span>Acte 2</span>
+        <span>Partie 2</span>
         <span>sécurité</span>
       </div>
     <h2>Je ne pousse jamais une clé sur GitHub</h2><p class="lead">Le support public remplace toutes les clés par un placeholder. C&#x27;est une règle non négociable. Une clé API dans un repo public peut être copiée, utilisée et facturée. Même si les crédits sont faibles, je masque.</p><div class="warning"><b>Attention terrain</b><p>Avant de publier, je cherche la clé dans le HTML, la transcription, les prompts et les images. Si je la trouve, je ne publie pas.</p></div></section>
 <section id="section-23" class="section reveal" data-section="23">
       <div class="meta-row">
         <span class="num">23</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>terminal</span>
       </div>
     <h2>J&#x27;ouvre le terminal au bon endroit</h2><p class="lead">Je lance le terminal depuis `06-prospects`. Ça permet à Claude Code de créer les fichiers dans le bon espace et de copier les exports au bon endroit. Le terminal est un détail qui change tout : mauvais dossier, mauvais livrable.</p>
@@ -1462,14 +1678,14 @@ claude --dangerously-skip-permissions</code></pre>
 <section id="section-24" class="section reveal" data-section="24">
       <div class="meta-row">
         <span class="num">24</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>permissions</span>
       </div>
     <h2>Le mode permissions fortes doit rester cadré</h2><p class="lead">Je peux lancer Claude Code avec des permissions très larges pour gagner du temps. Mais je le fais seulement dans un dossier de projet que je comprends. Si le dossier contient des secrets, des fichiers clients ou un repo sensible, je réduis le niveau d&#x27;autorisation.</p><div class="warning"><b>Attention terrain</b><p>Le mode rapide ne remplace pas ton jugement. Tu dois savoir ce que l&#x27;agent a le droit de modifier.</p></div></section>
 <section id="section-25" class="section reveal" data-section="25">
       <div class="meta-row">
         <span class="num">25</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>contexte</span>
       </div>
     <h2>Je donne les chemins exacts</h2><p class="lead">Le prompt indique les fichiers à lire. Je ne dis pas juste “regarde mon business”. Je donne les chemins : étude de marché, stratégie SEO/GEO et éventuellement brandbook. Un agent travaille mieux quand il sait où regarder.</p>
@@ -1481,14 +1697,14 @@ claude --dangerously-skip-permissions</code></pre>
 <section id="section-26" class="section reveal" data-section="26">
       <div class="meta-row">
         <span class="num">26</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>brief</span>
       </div>
     <h2>Le brief cible passe avant l&#x27;API</h2><p class="lead">Je demande un brief cible avant toute requête. Ce brief doit préciser l&#x27;offre, l&#x27;ICP, les segments P1 à P5, les exclusions, les douleurs, les signaux d&#x27;achat et les zones. C&#x27;est l&#x27;étape qui évite de dépenser des crédits dans le vide.</p><div class="check-grid"><label><input type="checkbox"> Offre en 5 lignes</label><label><input type="checkbox"> ICP prioritaire</label><label><input type="checkbox"> Segments P1 à P5</label><label><input type="checkbox"> Exclusions</label><label><input type="checkbox"> Douleurs publiques</label><label><input type="checkbox"> Zones prioritaires</label></div></section>
 <section id="section-27" class="section reveal" data-section="27">
       <div class="meta-row">
         <span class="num">27</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>icp</span>
       </div>
     <h2>L&#x27;ICP doit être exploitable par une API</h2><p class="lead">Un ICP vague ne sert pas à Serper. “Restaurants intéressants” ne veut rien dire. Je dois transformer l&#x27;ICP en mots cherchables : brasserie, bistrot, restaurant gastronomique, traiteur, privatisation, ville, quartier, réservation, contact, mentions légales.</p>
@@ -1500,28 +1716,28 @@ claude --dangerously-skip-permissions</code></pre>
 <section id="section-28" class="section reveal" data-section="28">
       <div class="meta-row">
         <span class="num">28</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>douleurs</span>
       </div>
     <h2>Je cherche des douleurs visibles publiquement</h2><p class="lead">Je ne peux pas lire l&#x27;intérieur du business. Je cherche donc des signes publics : mauvais avis, forte activité, formulaire absent, outil de réservation, téléphone, pages de groupe, recrutement, horaires étendus, événements, multi-sites.</p><div class="card-grid"><div><b>Appels</b><p>Clients qui n&#x27;arrivent pas à joindre.</p></div><div><b>Réservation</b><p>Annulation, attente, no-show.</p></div><div><b>Avis</b><p>Réputation et frustration.</p></div><div><b>Groupe</b><p>Privatisation et devis.</p></div></div></section>
 <section id="section-29" class="section reveal" data-section="29">
       <div class="meta-row">
         <span class="num">29</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>zones</span>
       </div>
     <h2>La zone fait exploser le volume</h2><p class="lead">Une ville donne quelques centaines de résultats. Une matrice villes x segments x pages peut monter beaucoup plus haut. Je commence par les zones prioritaires, puis j&#x27;étends si les premiers résultats sont bons.</p><div class="table-wrap"><table><thead><tr><th>Niveau</th><th>Exemple</th><th>Utilisation</th></tr></thead><tbody><tr><td>Ville</td><td>Lyon</td><td>Premier test rapide</td></tr><tr><td>Région</td><td>Île-de-France</td><td>Volume plus large</td></tr><tr><td>Quartier</td><td>Paris 11</td><td>Recherche fine</td></tr><tr><td>Zone premium</td><td>Bord de mer</td><td>Signal business</td></tr></tbody></table></div></section>
 <section id="section-30" class="section reveal" data-section="30">
       <div class="meta-row">
         <span class="num">30</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>validation</span>
       </div>
     <h2>Je valide le brief avant les crédits</h2><p class="lead">Quand l&#x27;agent propose le brief, je dois le lire. Si les segments sont hors cible, je corrige maintenant. Si les zones sont trop larges, je réduis. Si les douleurs sont floues, je demande des signaux mesurables.</p><div class="diagnostic"><b>Diagnostic</b><p>Les segments correspondent à l&#x27;offre.</p><p>Les exclusions sont présentes.</p><p>Les douleurs peuvent être trouvées publiquement.</p><p>La stratégie d&#x27;appel API est claire.</p></div></section>
 <section id="section-31" class="section reveal" data-section="31">
       <div class="meta-row">
         <span class="num">31</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>prompt</span>
       </div>
     <h2>Le prompt maître est une fiche de mission</h2><p class="lead">Le prompt maître ne se contente pas de dire “trouve des leads”. Il donne un rôle, une mission, des fichiers, des endpoints, des règles, un objectif quantitatif, une structure de sortie, des phases, une méthode de scoring et un message final attendu.</p>
@@ -1542,7 +1758,7 @@ claude --dangerously-skip-permissions</code></pre>
 <section id="section-32" class="section reveal" data-section="32"><div class="split"><div>
       <div class="meta-row">
         <span class="num">32</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>rôle</span>
       </div>
     <h2>Le rôle donne le niveau attendu</h2><p class="lead">Je demande un growth engineer B2B senior, spécialiste Serper, Google Search, Google Places, scoring et fichiers commerciaux. Ce rôle indique que l&#x27;agent doit penser collecte, qualité, déduplication et action commerciale.</p></div><div>
@@ -1555,42 +1771,42 @@ claude --dangerously-skip-permissions</code></pre>
 <section id="section-33" class="section reveal" data-section="33">
       <div class="meta-row">
         <span class="num">33</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>mission</span>
       </div>
     <h2>La mission parle de base actionnable</h2><p class="lead">Je ne demande pas une liste. Je demande une base massive, dédupliquée, scorée et actionnable. Ces quatre mots obligent l&#x27;agent à penser plus loin que la collecte brute.</p><div class="card-grid"><div><b>Massive</b><p>Plusieurs tours, pas 20 exemples.</p></div><div><b>Dédupliquée</b><p>Une entreprise ne compte qu&#x27;une fois.</p></div><div><b>Scorée</b><p>Je sais qui traiter d&#x27;abord.</p></div><div><b>Actionnable</b><p>Je peux contacter ou importer.</p></div></div></section>
 <section id="section-34" class="section reveal" data-section="34">
       <div class="meta-row">
         <span class="num">34</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>règles</span>
       </div>
     <h2>Les règles de données protègent le projet</h2><p class="lead">Je limite la collecte aux données publiques B2B. Pas de login, pas de captcha, pas de contournement, pas de données sensibles. Je garde les sources pour justifier ce que je mets dans la base.</p><div class="warning"><b>Attention terrain</b><p>Une base propre vaut mieux qu&#x27;une base énorme impossible à exploiter ou à expliquer.</p></div></section>
 <section id="section-35" class="section reveal" data-section="35">
       <div class="meta-row">
         <span class="num">35</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>objectif</span>
       </div>
     <h2>L&#x27;objectif quantitatif évite le faux livrable</h2><p class="lead">Sans objectif, l&#x27;agent peut s&#x27;arrêter après quelques résultats. Je précise qu&#x27;il doit chercher le maximum possible, avec des conditions d&#x27;arrêt : saturation, plafond prudent ou volume suffisant. C&#x27;est ce qui force la boucle.</p><div class="table-wrap"><table><thead><tr><th>Condition</th><th>Pourquoi</th><th>Décision</th></tr></thead><tbody><tr><td>Deux tours sous 10%</td><td>La collecte sature</td><td>Arrêter</td></tr><tr><td>250 appels</td><td>Budget prudent</td><td>Arrêter ou valider</td></tr><tr><td>1500 bruts / 500 qualifiés</td><td>Volume suffisant</td><td>Exporter</td></tr><tr><td>Crédits faibles</td><td>Risque budget</td><td>Contrôler</td></tr></tbody></table></div></section>
 <section id="section-36" class="section reveal" data-section="36">
       <div class="meta-row">
         <span class="num">36</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>structure</span>
       </div>
     <h2>Je demande les fichiers dès le départ</h2><p class="lead">Le prompt crée une structure claire : brief, stratégie, ledger, Excel, CSV, rapport, raw et scratch. L&#x27;agent ne doit pas finir avec des fichiers éparpillés. Tout doit être retrouvable.</p><div class="check-grid"><label><input type="checkbox"> brief-cible-leads.md</label><label><input type="checkbox"> strategie-serper.md</label><label><input type="checkbox"> queries-ledger.csv</label><label><input type="checkbox"> leads-serper.xlsx</label><label><input type="checkbox"> leads-serper.csv</label><label><input type="checkbox"> raw/</label></div></section>
 <section id="section-37" class="section reveal" data-section="37">
       <div class="meta-row">
         <span class="num">37</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase0</span>
       </div>
     <h2>Phase 0 : comprendre avant d&#x27;appeler Serper</h2><p class="lead">Cette phase transforme les fichiers du business en plan de collecte. Elle produit l&#x27;ICP, les segments, les exclusions, les douleurs, les signaux, les villes et les catégories Google Places. Sans ça, la suite est trop large.</p><div class="method-box"><b>Méthode</b><ol><li>Lire les fichiers business.</li><li>Synthétiser l&#x27;offre.</li><li>Classer les segments.</li><li>Lister les zones.</li><li>Définir les requêtes initiales.</li></ol></div></section>
 <section id="section-38" class="section reveal" data-section="38"><div class="split"><div>
       <div class="meta-row">
         <span class="num">38</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase1</span>
       </div>
     <h2>Phase 1 : construire la matrice de requêtes</h2><p class="lead">La matrice est le moteur. Elle combine segments, villes, douleurs, sources verticales et opérateurs Google. Je veux des requêtes qui explorent, mais aussi des requêtes qui ramènent des contacts et des preuves.</p></div><div>
@@ -1606,7 +1822,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-39" class="section reveal" data-section="39">
       <div class="meta-row">
         <span class="num">39</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase2</span>
       </div>
     <h2>Phase 2 : Places large</h2><p class="lead">Je lance Places sur les couples catégorie x zone. L&#x27;objectif est de créer le socle local. Je pagine tant que chaque page apporte des nouveaux leads. Si une page devient pleine de doublons, je coupe ce couple.</p>
@@ -1618,7 +1834,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-40" class="section reveal" data-section="40">
       <div class="meta-row">
         <span class="num">40</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase3</span>
       </div>
     <h2>Phase 3 : Search contact</h2><p class="lead">Search complète Places. Je cherche contact, contact@, mentions légales, SIRET, réservation, privatisation et devis. Les snippets peuvent parfois contenir directement un email ou un téléphone.</p>
@@ -1638,28 +1854,28 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-41" class="section reveal" data-section="41">
       <div class="meta-row">
         <span class="num">41</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase4</span>
       </div>
     <h2>Phase 4 : enrichir les sites publics</h2><p class="lead">Quand un lead a un site, l&#x27;agent peut visiter les pages évidentes : contact, mentions légales, réservation, privatisation, groupes. Il ne force rien. S&#x27;il y a blocage, il passe au lead suivant.</p><div class="warning"><b>Attention terrain</b><p>Ne force jamais un site qui bloque. La règle est simple : public, accessible, propre.</p></div></section>
 <section id="section-42" class="section reveal" data-section="42">
       <div class="meta-row">
         <span class="num">42</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>phase5</span>
       </div>
     <h2>Phase 5 : Reviews sur les meilleurs leads</h2><p class="lead">Je ne lance pas Reviews sur toute la base. Je le réserve aux leads qui ont déjà un score intéressant. Les avis servent à personnaliser : si plusieurs clients parlent d&#x27;attente au téléphone, l&#x27;angle devient plus précis.</p><div class="card-grid"><div><b>Téléphone</b><p>Agent vocal ou standard IA.</p></div><div><b>Réservation</b><p>Automatisation ou rappel.</p></div><div><b>Avis</b><p>Réputation et réponse client.</p></div><div><b>Groupe</b><p>Devis et suivi commercial.</p></div></div></section>
 <section id="section-43" class="section reveal" data-section="43">
       <div class="meta-row">
         <span class="num">43</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour1</span>
       </div>
     <h2>Tour 1 : comprendre la cible</h2><p class="lead">Le premier tour ne collecte pas. Il structure. Je veux que l&#x27;agent lise, déduise et propose. Cette étape est souvent moins spectaculaire, mais c&#x27;est celle qui évite la mauvaise base.</p><div class="method-box"><b>Méthode</b><ol><li>Lire les fichiers.</li><li>Écrire le brief.</li><li>Valider les segments.</li><li>Préparer les requêtes.</li></ol></div></section>
 <section id="section-44" class="section reveal" data-section="44">
       <div class="meta-row">
         <span class="num">44</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour2</span>
       </div>
     <h2>Tour 2 : lancer Places</h2><p class="lead">Je collecte les fiches Google Business par segment et par ville. Je récupère les champs qui serviront au scoring : catégorie, ville, site, note, nombre d&#x27;avis, prix, CID et adresse.</p>
@@ -1671,7 +1887,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-45" class="section reveal" data-section="45"><div class="split"><div>
       <div class="meta-row">
         <span class="num">45</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour3</span>
       </div>
     <h2>Tour 3 : chercher les contacts</h2><p class="lead">Je lance les requêtes Search pour trouver les pages contact et les mentions légales. C&#x27;est ici que les emails publics peuvent apparaître. L&#x27;agent normalise les formats `contact [a] domaine.fr` ou `contact(at)domaine.fr`.</p></div><div>
@@ -1684,28 +1900,28 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-46" class="section reveal" data-section="46">
       <div class="meta-row">
         <span class="num">46</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour4</span>
       </div>
     <h2>Tour 4 : utiliser les opérateurs Google</h2><p class="lead">Les opérateurs rendent Search plus précis. `site:pappers.fr`, `site:societe.com`, `site:linkedin.com/company`, `intitle:contact` et `mentions légales` peuvent faire remonter des pages que la recherche simple ne sort pas.</p><div class="card-grid"><div><b>site:pappers.fr</b><p>Infos société.</p></div><div><b>site:linkedin.com/company</b><p>Page entreprise.</p></div><div><b>intitle:contact</b><p>Page contact.</p></div><div><b>mentions légales</b><p>Email ou société.</p></div></div></section>
 <section id="section-47" class="section reveal" data-section="47">
       <div class="meta-row">
         <span class="num">47</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour5</span>
       </div>
     <h2>Tour 5 : regarder les sources verticales</h2><p class="lead">Les annuaires spécialisés peuvent compléter la base. Je ne les utilise pas aveuglément. Je regarde s&#x27;ils apportent des leads nouveaux, des emails, des sites ou des catégories plus fines.</p><div class="table-wrap"><table><thead><tr><th>Source</th><th>Ce que je cherche</th><th>Limite</th></tr></thead><tbody><tr><td>PagesJaunes</td><td>Téléphone, adresse</td><td>Doublons</td></tr><tr><td>Pappers</td><td>Société, SIRET</td><td>Pas toujours commercial</td></tr><tr><td>TheFork</td><td>Réservation</td><td>Pas tous les restaurants</td></tr><tr><td>LinkedIn</td><td>Entreprise</td><td>Peu d&#x27;emails</td></tr></tbody></table></div></section>
 <section id="section-48" class="section reveal" data-section="48">
       <div class="meta-row">
         <span class="num">48</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour6</span>
       </div>
     <h2>Tour 6 : détecter la maturité digitale</h2><p class="lead">Je cherche des signaux qui montrent qu&#x27;une entreprise comprend déjà le digital : réservation en ligne, site propre, réseaux sociaux, multi-sites, avis nombreux, recrutement ou page privatisation.</p><div class="check-grid"><label><input type="checkbox"> Site actif</label><label><input type="checkbox"> Outil réservation</label><label><input type="checkbox"> Avis nombreux</label><label><input type="checkbox"> Page groupe</label><label><input type="checkbox"> Réseaux visibles</label><label><input type="checkbox"> Recrutement récent</label></div></section>
 <section id="section-49" class="section reveal" data-section="49">
       <div class="meta-row">
         <span class="num">49</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour7</span>
       </div>
     <h2>Tour 7 : enrichir avec les avis</h2><p class="lead">Les avis ne doivent pas être copiés brutalement dans un message. Je les utilise comme signal. Je paraphrase les douleurs et je garde une preuve courte. Le message final doit rester respectueux.</p>
@@ -1717,35 +1933,35 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-50" class="section reveal" data-section="50">
       <div class="meta-row">
         <span class="num">50</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>tour8</span>
       </div>
     <h2>Tour 8 : chercher la saturation</h2><p class="lead">La saturation arrive quand les nouvelles requêtes ramènent surtout des doublons. À ce moment-là, je demande à l&#x27;agent d&#x27;analyser les trous : villes faibles, segments rentables, requêtes avec emails, catégories sous-exploitées.</p><div class="diagnostic"><b>Diagnostic</b><p>Nouveaux leads sous 10%</p><p>Trop de doublons</p><p>Peu d&#x27;emails nouveaux</p><p>Même villes qui reviennent</p><p>Crédits restants faibles</p></div></section>
 <section id="section-51" class="section reveal" data-section="51">
       <div class="meta-row">
         <span class="num">51</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>cache</span>
       </div>
     <h2>Je ne relance jamais la même requête</h2><p class="lead">Chaque réponse API doit être stockée dans `raw/`. Avant d&#x27;appeler Serper, l&#x27;agent vérifie si la réponse existe déjà. Ça évite de brûler des crédits pour récupérer la même chose.</p><div class="tip"><b>Tip</b><p>Le cache transforme Serper en système contrôlable. Sans cache, tu ne sais pas ce qui a déjà été consommé.</p></div></section>
 <section id="section-52" class="section reveal" data-section="52">
       <div class="meta-row">
         <span class="num">52</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>raw</span>
       </div>
     <h2>Le dossier raw garde les preuves</h2><p class="lead">Les fichiers raw permettent de revenir à la source. Si un lead paraît étrange, je peux vérifier la réponse originale. C&#x27;est aussi utile si je veux refaire le scoring plus tard sans relancer l&#x27;API.</p><div class="card-grid"><div><b>raw/places</b><p>Fiches Google Business.</p></div><div><b>raw/search</b><p>Résultats Google.</p></div><div><b>raw/reviews</b><p>Avis et signaux.</p></div><div><b>raw/autocomplete</b><p>Variantes de requêtes.</p></div></div></section>
 <section id="section-53" class="section reveal" data-section="53">
       <div class="meta-row">
         <span class="num">53</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>ledger</span>
       </div>
     <h2>Le ledger raconte toutes les requêtes</h2><p class="lead">`queries-ledger.csv` liste chaque appel : endpoint, payload, segment, zone, priorité, nombre de résultats et coût estimé. Sans ledger, je ne peux pas savoir pourquoi la base a cette forme.</p><div class="table-wrap"><table><thead><tr><th>Colonne</th><th>Pourquoi</th></tr></thead><tbody><tr><td>endpoint</td><td>Savoir quel type de donnée</td></tr><tr><td>query</td><td>Retrouver la logique</td></tr><tr><td>segment</td><td>Comparer les marchés</td></tr><tr><td>new_leads</td><td>Mesurer la rentabilité</td></tr><tr><td>raw_file</td><td>Revenir à la preuve</td></tr></tbody></table></div></section>
 <section id="section-54" class="section reveal" data-section="54"><div class="split"><div>
       <div class="meta-row">
         <span class="num">54</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>monitoring</span>
       </div>
     <h2>Je demande un point d&#x27;avancement</h2><p class="lead">Pendant une collecte longue, je ne laisse pas tourner sans comprendre. Je demande à l&#x27;agent où il en est. Je veux le nombre de requêtes, les crédits, les leads, les emails et la prochaine étape.</p></div><div>
@@ -1768,14 +1984,14 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-55" class="section reveal" data-section="55">
       <div class="meta-row">
         <span class="num">55</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>dedupe</span>
       </div>
     <h2>La déduplication est obligatoire</h2><p class="lead">Un restaurant peut apparaître dans Places, Search, Pappers, un annuaire et son propre site. Je ne veux pas cinq lignes. Je veux une seule fiche enrichie avec toutes les sources.</p><div class="method-box"><b>Méthode</b><ol><li>Fusion par CID.</li><li>Sinon domaine normalisé.</li><li>Sinon email.</li><li>Sinon téléphone.</li><li>Sinon nom + ville + adresse.</li></ol></div></section>
 <section id="section-56" class="section reveal" data-section="56">
       <div class="meta-row">
         <span class="num">56</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>domaine</span>
       </div>
     <h2>Le domaine normalisé évite les doublons</h2><p class="lead">Je retire `https://`, `www.` et le slash final. `https://www.exemple.fr/` et `exemple.fr` doivent être considérés comme la même entreprise. Cette petite règle change beaucoup sur les gros fichiers.</p>
@@ -1787,28 +2003,28 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-57" class="section reveal" data-section="57">
       <div class="meta-row">
         <span class="num">57</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>emails</span>
       </div>
     <h2>Les emails doivent rester plausibles</h2><p class="lead">Je garde surtout les emails génériques publics : contact@, bonjour@, hello@, reservation@, commercial@. Je ne veux pas de données personnelles sensibles. Si un email semble cassé, je le marque à vérifier.</p><div class="warning"><b>Attention terrain</b><p>Un email visible dans un snippet peut être incomplet. Vérifie les meilleurs leads avant d&#x27;envoyer.</p></div></section>
 <section id="section-58" class="section reveal" data-section="58">
       <div class="meta-row">
         <span class="num">58</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>téléphone</span>
       </div>
     <h2>Le téléphone complète l&#x27;email</h2><p class="lead">Certains restaurants n&#x27;ont pas d&#x27;email public, mais ils ont un téléphone. Je ne jette pas ces leads. Je les classe dans un onglet séparé et je décide plus tard s&#x27;ils valent un appel, un SMS professionnel ou une autre méthode.</p><div class="card-grid"><div><b>Avec email</b><p>Prêt pour séquence écrite.</p></div><div><b>Sans email</b><p>À traiter autrement.</p></div><div><b>Avec téléphone</b><p>Contact direct possible.</p></div><div><b>Formulaire</b><p>Peut remplacer l&#x27;email.</p></div></div></section>
 <section id="section-59" class="section reveal" data-section="59">
       <div class="meta-row">
         <span class="num">59</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>fit</span>
       </div>
     <h2>fit_score mesure l&#x27;alignement</h2><p class="lead">Le fit_score regarde si le lead appartient au bon segment, à la bonne zone, avec un budget probable, une taille intéressante et sans mauvais fit évident. C&#x27;est le score de base.</p><div class="table-wrap"><table><thead><tr><th>Critère</th><th>Points</th></tr></thead><tbody><tr><td>Segment prioritaire</td><td>+8</td></tr><tr><td>Zone prioritaire</td><td>+5</td></tr><tr><td>Taille ou multi-sites</td><td>+5</td></tr><tr><td>Budget probable</td><td>+4</td></tr><tr><td>Pas exclu</td><td>+3</td></tr></tbody></table></div></section>
 <section id="section-60" class="section reveal" data-section="60">
       <div class="meta-row">
         <span class="num">60</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>pain</span>
       </div>
     <h2>pain_score mesure le problème visible</h2><p class="lead">Le pain_score augmente quand les avis, le site ou les pages montrent une douleur exploitable. Exemple : beaucoup d&#x27;avis, réservation compliquée, appels non répondus, page groupe, frustration récente.</p>
@@ -1820,7 +2036,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-61" class="section reveal" data-section="61">
       <div class="meta-row">
         <span class="num">61</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>reachability</span>
       </div>
     <h2>reachability_score mesure la facilité de contact</h2><p class="lead">Un bon lead doit être joignable. Je donne plus de points à un email direct, puis au téléphone, au formulaire, à LinkedIn et au site actif. Ce score évite de mettre trop haut une entreprise impossible à contacter.</p><div class="table-wrap"><table><thead><tr><th>Signal</th><th>Points</th></tr></thead><tbody><tr><td>Email direct</td><td>+8</td></tr><tr><td>Téléphone</td><td>+4</td></tr><tr><td>Formulaire</td><td>+3</td></tr><tr><td>LinkedIn</td><td>+3</td></tr><tr><td>Site actif</td><td>+2</td></tr></tbody></table></div>
@@ -1836,21 +2052,21 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-62" class="section reveal" data-section="62">
       <div class="meta-row">
         <span class="num">62</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>maturity</span>
       </div>
     <h2>maturity_score mesure la maturité digitale</h2><p class="lead">Une entreprise déjà équipée comprend mieux la valeur d&#x27;un outil IA. Outil de réservation, site propre, activité sociale, multi-sites et avis nombreux sont des signaux utiles.</p><div class="check-grid"><label><input type="checkbox"> Outil réservation</label><label><input type="checkbox"> Site propre</label><label><input type="checkbox"> Activité sociale</label><label><input type="checkbox"> Multi-sites</label><label><input type="checkbox"> Avis nombreux</label></div></section>
 <section id="section-63" class="section reveal" data-section="63">
       <div class="meta-row">
         <span class="num">63</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>timing</span>
       </div>
     <h2>timing_score mesure le moment</h2><p class="lead">Le bon lead au mauvais moment répond peu. Je cherche donc les signaux récents : ouverture, recrutement, événement, avis récents, page privatisation ou contenu mis à jour.</p><div class="card-grid"><div><b>Ouverture</b><p>Besoin d&#x27;organisation.</p></div><div><b>Recrutement</b><p>Croissance ou manque.</p></div><div><b>Événement</b><p>Demande ponctuelle.</p></div><div><b>Avis récents</b><p>Problème actif.</p></div></div></section>
 <section id="section-64" class="section reveal" data-section="64">
       <div class="meta-row">
         <span class="num">64</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>classe</span>
       </div>
     <h2>La classe donne la priorité</h2><p class="lead">Le priority_score additionne les scores. Je classe ensuite A+, A, B, C ou D. Je ne contacte pas tout le fichier. Je commence par A+ et A, puis j&#x27;observe la réponse du marché.</p>
@@ -1862,7 +2078,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-65" class="section reveal" data-section="65"><div class="split"><div>
       <div class="meta-row">
         <span class="num">65</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>angle</span>
       </div>
     <h2>L&#x27;angle personnalisé vient des signaux</h2><p class="lead">Je ne veux pas envoyer “bonjour, je fais de l&#x27;IA”. Je veux un message relié au lead : avis, réservation, privatisation, téléphone, groupe, site, ville ou segment. Le fichier doit proposer un angle court.</p></div><div>
@@ -1875,7 +2091,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-66" class="section reveal" data-section="66">
       <div class="meta-row">
         <span class="num">66</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>excel</span>
       </div>
     <h2>L&#x27;Excel devient l&#x27;outil de décision</h2><p class="lead">Le classeur doit être lisible : filtres, onglets, colonnes figées, couleurs par classe, score descendant. Je dois pouvoir ouvrir le fichier et savoir quoi faire en moins de cinq minutes.</p>
@@ -1887,7 +2103,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-67" class="section reveal" data-section="67">
       <div class="meta-row">
         <span class="num">67</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>ouvrir</span>
       </div>
     <h2>J&#x27;ouvre le fichier, je ne fais pas confiance au message final</h2><p class="lead">Quand l&#x27;agent annonce que c&#x27;est terminé, j&#x27;ouvre le XLSX. Je regarde les onglets, les compteurs, les classes, les colonnes et les graphiques. Le message final est utile, mais le fichier est la preuve.</p>
@@ -1899,7 +2115,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-68" class="section reveal" data-section="68">
       <div class="meta-row">
         <span class="num">68</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>dashboard</span>
       </div>
     <h2>Le dashboard donne une vue rapide</h2><p class="lead">Je regarde le nombre de leads bruts, leads dédupliqués, avec email, sans email, avec téléphone, avec website et les classes. Si les chiffres sont incohérents, je retourne dans le rapport.</p>
@@ -1911,7 +2127,7 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-69" class="section reveal" data-section="69">
       <div class="meta-row">
         <span class="num">69</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>all-leads</span>
       </div>
     <h2>All Leads doit rester lisible</h2><p class="lead">Une grosse base devient vite illisible. Les colonnes importantes doivent être au début : classe, score, nom, segment, site, email, téléphone, ville, sources, pain signals, angle et next action.</p>
@@ -1923,21 +2139,21 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-70" class="section reveal" data-section="70">
       <div class="meta-row">
         <span class="num">70</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>avec-sans</span>
       </div>
     <h2>Je sépare avec email et sans email</h2><p class="lead">Les leads sans email ne sont pas inutiles. Ils demandent juste une autre action. En séparant les onglets, je peux lancer une séquence email sans mélanger les lignes incomplètes.</p><div class="card-grid"><div><b>Avec Email</b><p>Priorité séquence écrite.</p></div><div><b>Sans Email</b><p>Recherche complémentaire.</p></div><div><b>Avec Téléphone</b><p>Appel possible.</p></div><div><b>A+ et A</b><p>Contrôle manuel d&#x27;abord.</p></div></div></section>
 <section id="section-71" class="section reveal" data-section="71">
       <div class="meta-row">
         <span class="num">71</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>top</span>
       </div>
     <h2>Les A+ et A passent en revue manuelle</h2><p class="lead">Je ne contacte pas automatiquement 500 entreprises dès la première base. Je prends les 30 meilleurs leads, je vérifie les sites, les emails, les signaux et les angles. Ensuite seulement je prépare la première vague.</p><div class="method-box"><b>Méthode</b><ol><li>Filtrer A+ et A.</li><li>Vérifier 30 lignes.</li><li>Corriger les emails douteux.</li><li>Préparer 10 messages.</li><li>Mesurer les réponses.</li></ol></div></section>
 <section id="section-72" class="section reveal" data-section="72">
       <div class="meta-row">
         <span class="num">72</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>logs</span>
       </div>
     <h2>Les logs Serper vérifient la consommation</h2><p class="lead">Je consulte les logs pour voir les requêtes effectuées. Si le fichier annonce 3 000 appels mais que Serper montre autre chose, il faut investiguer. Les logs servent aussi à comprendre les requêtes qui coûtent le plus.</p>
@@ -1949,28 +2165,28 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-73" class="section reveal" data-section="73">
       <div class="meta-row">
         <span class="num">73</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>erreurs</span>
       </div>
     <h2>Les erreurs fréquentes à éviter</h2><p class="lead">La séance montre un système puissant, mais les erreurs restent simples : cible trop large, clé publiée, doublons, source absente, scoring flou, messages génériques, ou fichier trop lourd sans onglets utiles.</p><div class="warning"><b>Attention terrain</b><p>Si ton fichier est énorme mais que tu ne sais pas quoi faire demain matin, il n&#x27;est pas encore bon.</p></div></section>
 <section id="section-74" class="section reveal" data-section="74">
       <div class="meta-row">
         <span class="num">74</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>sécurité-finale</span>
       </div>
     <h2>Je vérifie les secrets avant publication</h2><p class="lead">Avant de pousser le support, je cherche les clés dans les fichiers texte, le HTML, les transcriptions et les images. Les visuels sensibles sont masqués. La formation doit montrer la méthode, pas exposer un accès API.</p><div class="diagnostic"><b>Diagnostic</b><p>Recherche texte de la clé.</p><p>Images sensibles masquées.</p><p>Placeholder dans les prompts.</p><p>Vidéo non publiée.</p><p>Repo public limité aux fichiers utiles.</p></div></section>
 <section id="section-75" class="section reveal" data-section="75">
       <div class="meta-row">
         <span class="num">75</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>vagues</span>
       </div>
     <h2>Je contacte par vagues</h2><p class="lead">Une base de leads n&#x27;est pas une excuse pour spammer. Je commence petit : 10 à 30 leads, messages propres, suivi des réponses, puis ajustement. La qualité du retour compte plus que le volume envoyé.</p><div class="card-grid"><div><b>Vague 1</b><p>10 à 30 leads vérifiés.</p></div><div><b>Mesure</b><p>Réponses, refus, intérêt.</p></div><div><b>Correction</b><p>Angle, cible, offre.</p></div><div><b>Vague 2</b><p>Plus large après apprentissage.</p></div></div></section>
 <section id="section-76" class="section reveal" data-section="76">
       <div class="meta-row">
         <span class="num">76</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>réutiliser</span>
       </div>
     <h2>Je peux réutiliser la méthode sur un autre marché</h2><p class="lead">La vraie valeur de la séance, ce n&#x27;est pas seulement le fichier restauration. C&#x27;est la méthode : comprendre, requêter, enrichir, dédupliquer, scorer, exporter, vérifier, contacter. Tu peux la réutiliser pour un autre secteur en changeant les fichiers de départ et la matrice.</p>
@@ -1982,91 +2198,91 @@ site:linkedin.com/company &quot;{segment}&quot; &quot;{ville}&quot;
 <section id="section-77" class="section reveal" data-section="77">
       <div class="meta-row">
         <span class="num">77</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>approfondir</span>
       </div>
     <h2>Le premier test Search doit rester petit</h2><p class="lead">Je teste Search avec un payload court avant de partir sur un run massif. Si le résultat ne contient pas de contacts, je corrige les requêtes. Un petit test évite une grosse erreur. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-78" class="section reveal" data-section="78">
       <div class="meta-row">
         <span class="num">78</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>approfondir</span>
       </div>
     <h2>Le premier test Places valide la catégorie</h2><p class="lead">Je teste Places sur une ville connue. Je regarde si les catégories sont pertinentes. Si Serper sort trop de hors sujet, je change les termes de recherche. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-79" class="section reveal" data-section="79">
       <div class="meta-row">
         <span class="num">79</span>
-        <span>Acte 3</span>
+        <span>Partie 3</span>
         <span>approfondir</span>
       </div>
     <h2>La langue et le pays comptent</h2><p class="lead">Pour un marché français, je règle `gl` et `hl` en `fr`. Je peux aussi préciser la ville dans `location`. Ça évite des résultats hors pays ou mal localisés. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-80" class="section reveal" data-section="80">
       <div class="meta-row">
         <span class="num">80</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>approfondir</span>
       </div>
     <h2>Je limite Reviews aux meilleurs leads</h2><p class="lead">Reviews coûte des appels. Je ne le lance pas sur tout. Je le garde pour les fiches qui ont un CID et un premier score intéressant. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-81" class="section reveal" data-section="81">
       <div class="meta-row">
         <span class="num">81</span>
-        <span>Acte 4</span>
+        <span>Partie 4</span>
         <span>approfondir</span>
       </div>
     <h2>Les sources verticales sont des compléments</h2><p class="lead">Pappers, Societe.com, PagesJaunes ou LinkedIn aident à enrichir. Mais je ne base pas toute la collecte dessus, car les doublons peuvent exploser. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-82" class="section reveal" data-section="82">
       <div class="meta-row">
         <span class="num">82</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>approfondir</span>
       </div>
     <h2>Je surveille le taux de nouveaux leads</h2><p class="lead">La question n&#x27;est pas seulement combien de résultats arrivent. La vraie question est combien sont nouveaux après déduplication. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-83" class="section reveal" data-section="83">
       <div class="meta-row">
         <span class="num">83</span>
-        <span>Acte 5</span>
+        <span>Partie 5</span>
         <span>approfondir</span>
       </div>
     <h2>Je garde les villes pauvres en observation</h2><p class="lead">Si une ville sort peu de leads, elle n&#x27;est pas forcément inutile. Elle peut demander d&#x27;autres synonymes ou une recherche par quartier. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-84" class="section reveal" data-section="84">
       <div class="meta-row">
         <span class="num">84</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>approfondir</span>
       </div>
     <h2>Le scoring doit être explicable</h2><p class="lead">Si je ne peux pas expliquer pourquoi un lead est A, le scoring est mauvais. Chaque score doit correspondre à une règle simple. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-85" class="section reveal" data-section="85">
       <div class="meta-row">
         <span class="num">85</span>
-        <span>Acte 6</span>
+        <span>Partie 6</span>
         <span>approfondir</span>
       </div>
     <h2>Le mauvais fit doit descendre vite</h2><p class="lead">Un lead hors cible ne doit pas rester haut parce qu&#x27;il a un email. L&#x27;alignement business passe avant la facilité de contact. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-86" class="section reveal" data-section="86">
       <div class="meta-row">
         <span class="num">86</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>approfondir</span>
       </div>
     <h2>Je vérifie les emails avant envoi</h2><p class="lead">Les emails publics peuvent être obsolètes. Avant une vague, je contrôle les meilleurs leads et je retire les adresses douteuses. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-87" class="section reveal" data-section="87">
       <div class="meta-row">
         <span class="num">87</span>
-        <span>Acte 7</span>
+        <span>Partie 7</span>
         <span>approfondir</span>
       </div>
     <h2>Je ne confonds pas rapport et décision</h2><p class="lead">Le rapport explique la collecte. L&#x27;Excel décide l&#x27;action. Les deux sont utiles, mais ils ne servent pas au même moment. Je garde toujours une preuve simple : un fichier, une requête, une source, un chiffre ou une capture. C&#x27;est cette preuve qui rend la méthode réutilisable.</p><div class="tip"><b>Tip</b><p>Ne saute pas cette logique. Sur une grosse base, les petites règles évitent les gros fichiers inutilisables.</p></div></section>
 <section id="section-88" class="section reveal" data-section="88">
       <div class="meta-row">
         <span class="num">88</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>approfondir</span>
       </div>
     <h2>La suite logique est la prospection</h2><p class="lead">Une fois la base prête, je peux préparer les messages, les séquences, les suivis et les relances. La séance suivante peut transformer les leads en pipeline. À partir de là, je ne cherche pas à envoyer le plus de messages possible. Je veux une première vague propre, mesurable et facile à corriger. La base sert à choisir les bons contacts, pas à envoyer au hasard.</p><div class="card-grid"><div><b>Base prête</b><p>Je pars des leads A+/A, avec ville, segment, site, email ou signal utile.</p></div><div><b>Premier lot</b><p>Je sélectionne 10 à 30 contacts. C&#x27;est assez pour apprendre sans perdre le contrôle.</p></div><div><b>Message utile</b><p>Je m&#x27;appuie sur un vrai signal : avis, site incomplet, absence de réservation, besoin SEO ou problème visible.</p></div><div><b>Retour marché</b><p>Je note les réponses, les refus, les questions et les objections avant d&#x27;élargir.</p></div></div><div class="method-box"><b>Méthode</b><ol><li>Choisis les 30 meilleurs leads A+/A dans le fichier.</li><li>Vérifie vite le site, l&#x27;email, la ville et le signal principal.</li><li>Prépare trois angles de message courts avec Claude Code ou Codex.</li><li>Envoie une première vague propre, sans automatiser trop tôt.</li><li>Corrige l&#x27;angle avant de lancer une vague plus grande.</li></ol></div></section>
 <section id="section-89" class="section reveal" data-section="89">
       <div class="meta-row">
         <span class="num">89</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>prompt-final</span>
       </div>
     <h2>Le prompt maître complet</h2><p class="lead">Le prompt maître est volontairement complet. Je ne le lis pas comme un roman : je vérifie le rôle, les fichiers sources, la sécurité de la clé, les phases de collecte, le scoring et les livrables. Tu peux le reprendre, mais tu dois toujours adapter les chemins, le secteur, les villes et les règles de score.</p><div class="card-grid"><div><b>Rôle</b><p>Je donne à l&#x27;agent une posture claire : growth engineer B2B senior, orienté données et fichiers commerciaux.</p></div><div><b>Sources</b><p>Je force l&#x27;agent à repartir des fichiers existants. Il ne travaille pas dans le vide.</p></div><div><b>Sécurité</b><p>Je masque la clé Serper dans le support. Une clé API ne doit jamais finir dans une page publique.</p></div><div><b>Livrables</b><p>Je demande un XLSX, un CSV, un rapport MD, un résumé chiffré et une preuve de contrôle.</p></div></div>
@@ -2538,7 +2754,7 @@ Meilleurs segments : ...&quot;</code></pre>
 <section id="section-90" class="section reveal" data-section="90"><div class="split"><div>
       <div class="meta-row">
         <span class="num">90</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>copie</span>
       </div>
     <h2>Je copie les fichiers au bon endroit</h2><p class="lead">Quand le run génère les fichiers dans un dossier temporaire, je demande à l&#x27;agent de les copier dans `06-prospects`. Ce n&#x27;est pas un détail. Si le fichier final est au mauvais endroit, tu vas le perdre.</p></div><div>
@@ -2556,7 +2772,7 @@ Meilleurs segments : ...&quot;</code></pre>
 <section id="section-91" class="section reveal" data-section="91">
       <div class="meta-row">
         <span class="num">91</span>
-        <span>Acte 8</span>
+        <span>Partie 8</span>
         <span>récap</span>
       </div>
     <h2>Ce que tu dois garder</h2><p class="lead">L&#x27;étude de marché dit qui viser. L&#x27;audit SEO/GEO dit quels problèmes vendre. Serper trouve les entreprises. La déduplication nettoie. Le scoring décide l&#x27;ordre. Le fichier Excel transforme tout ça en actions. Si tu gardes cette chaîne, tu peux construire une base de prospects sérieuse sans acheter un fichier opaque.</p><div class="card-grid"><div><b>Comprendre</b><p>Avant API.</p></div><div><b>Collecter</b><p>Avec matrice.</p></div><div><b>Nettoyer</b><p>Avec déduplication.</p></div><div><b>Scorer</b><p>Avec critères.</p></div><div><b>Vérifier</b><p>Avec preuves.</p></div><div><b>Contacter</b><p>Par vagues.</p></div></div></section>
@@ -2721,5 +2937,27 @@ Meilleurs segments : ...&quot;</code></pre>
 })();
 </script>
 
+<script id="denem-session-media-script">
+(() => {
+  const select = document.getElementById('denem-session-switch');
+  if (select) {
+    select.addEventListener('change', () => {
+      const value = select.value;
+      if (value && value !== '#top') window.location.href = value;
+    });
+  }
+  const markMissing = (img) => {
+    const frame = img.closest('figure, .media-card, .shot, .visual, .hero-card, .poster, .image-card, .screen, .capture');
+    if (!frame) return;
+    frame.classList.add('is-media-missing');
+    frame.setAttribute('aria-label', 'Bloc media a completer');
+  };
+  document.querySelectorAll('img').forEach((img) => {
+    if (!img.getAttribute('src')) markMissing(img);
+    if (img.complete && img.naturalWidth === 0) markMissing(img);
+    img.addEventListener('error', () => markMissing(img), { once: true });
+  });
+})();
+</script>
 </body>
 </html>
